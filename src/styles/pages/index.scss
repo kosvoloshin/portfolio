@@ -4,4 +4,91 @@
     background-position: center center;
     background-size: cover;
     height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__btn-link {
+    border: 1px #fff solid;
+    padding: 17px 28px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.42;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+}
+
+.start__page {
+    height: 395px;
+    width: 380px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.start__page-photo {
+    height: 141px;
+    width: 141px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.start__page-name {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 28px;
+    font-weight: normal;
+    color: #455a64;
+}
+
+.start__page-desk {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #455a64;
+    margin-top: 10px;
+}
+
+.start__page_menu {
+    width: 100%;
+    background-color: rgba($color: #009688, $alpha: 0.5);
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.start__page_menu-items {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.start__page_menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.42;
+    padding: 12px 31px;
+}
+
+.start__copy {
+    position: absolute;
+    bottom: 43px;
+    color: #d5d7d9;
+    font-size: 16px;
+    font-weight: 300;
 }
