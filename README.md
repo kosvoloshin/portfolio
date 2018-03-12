@@ -1,6 +1,10 @@
-How to install and build my app
+Карпов Антон
 
-1. git clone https://github.com
-2. cd 032018web3
-3. npm i
-4. npm run build
+Для работы сборки у вас должны быть установлены
+npm 5
+gulp-cli
+
+Как установить проект
+clone this repo
+npm i
+gulp

@@ -4,5 +4,25 @@ block variables
     - var title = 'Welcome'
 
 block content
-    h1 Главная 
+    .wrapper
+        .start
+            .start__login-btn: a.login__btn-link Авторизоваться
+            .start__page
+                .start__page-info
+                    .start__page-photo
+                    .start__page-name Владимир Астахов
+                    .start__page-desk Личный сайт веб разработчика
+                    .start__page_soc
+                        ul.start__page_soc-items
+                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
+                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
+                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
+                .start__page_menu: ul.start__page_menu-items
+                    li.start__page_menu-item: a.start__page_menu-link(href="works.html") Мои работы
+                    li.start__page_menu-item: a.start__page_menu-link(href="about.html") Обо мне
+                    li.start__page_menu-item: a.start__page_menu-link(href="blog.html") Блог
+            .start__copy Владимир Астахов | создано с любовью в LoftSchool | 2016
+                                        
+
+        
 
