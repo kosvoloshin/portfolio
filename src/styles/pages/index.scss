@@ -27,12 +27,20 @@
 .start__page {
     height: 395px;
     width: 380px;
-    background-color: rgba($color: #fff, $alpha: 0.8);
+    //background-color: rgba($color: #fff, $alpha: 0.8);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+.start__page-info {
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .start__page-photo {
@@ -60,12 +68,9 @@
 
 .start__page_menu {
     width: 100%;
-    background-color: rgba($color: #009688, $alpha: 0.5);
     height: 45px;
     position: absolute;
     bottom: 0;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
 }
 
 .start__page_menu-items {
@@ -73,7 +78,25 @@
     flex-direction: row;
     height: 100%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.start__page_menu-item {
+    background-color: rgba($color: #009688, $alpha: 0.8);
+    height: 100%;
+    display: flex;
+    
+    &:first-child {
+        border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+        border-bottom-right-radius: 5px;
+    }
+
+    &:hover {
+        background-color: rgba($color: #04796e, $alpha: 0.8);
+    }
 }
 
 .start__page_menu-link {
