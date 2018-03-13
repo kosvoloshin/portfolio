@@ -13,21 +13,27 @@
 .login__btn-link {
     border: 1px #fff solid;
     padding: 17px 28px;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #fff;
     text-decoration: none;
+    font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
     line-height: 1.42;
     position: absolute;
     top: 25px;
     right: 100px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        color: #00bfa5;
+    }
 }
 
 .start__page {
     height: 395px;
     width: 380px;
-    //background-color: rgba($color: #fff, $alpha: 0.8);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -54,16 +60,49 @@
     text-align: center;
     margin-top: 15px;
     font-size: 28px;
-    font-weight: normal;
+    font-family: 'Roboto';
+    font-weight: 500;
     color: #455a64;
 }
 
 .start__page-desk {
     text-align: center;
     font-size: 16px;
+    font-family: 'Roboto';
     font-weight: normal;
     color: #455a64;
     margin-top: 10px;
+}
+
+.start__page_soc {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.start__page_soc-items {
+    display: flex;
+    height: 100%;
+}
+
+.start__page_soc-item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}    
+
+.start__page_soc-icon {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: rgba($color: #009688, $alpha: 0.8);
+
+    &:hover {
+        fill: rgba($color: #04796e, $alpha: 0.8);
+    }
 }
 
 .start__page_menu {
@@ -97,21 +136,36 @@
     &:hover {
         background-color: rgba($color: #04796e, $alpha: 0.8);
     }
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 45px;
+        background-color: rgba($color: #fff, $alpha: 0.8);
+    }
+
+    &:last-child:after {
+        opacity: 0;
+    }
 }
 
 .start__page_menu-link {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    font-family: 'Roboto';
     font-weight: 500;
     line-height: 1.42;
     padding: 12px 31px;
 }
+
 
 .start__copy {
     position: absolute;
     bottom: 43px;
     color: #d5d7d9;
     font-size: 16px;
+    font-family: 'Roboto';
     font-weight: 300;
 }

@@ -14,13 +14,39 @@ block content
                     .start__page-desk Личный сайт веб разработчика
                     .start__page_soc
                         ul.start__page_soc-items
-                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
-                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
-                            li.start__page_soc-item: a.start__page_social-link(href="https://www.vk.com/")
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#github")
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#in")
                 .start__page_menu: ul.start__page_menu-items
                     li.start__page_menu-item: a.start__page_menu-link(href="works.html") Мои работы
                     li.start__page_menu-item: a.start__page_menu-link(href="about.html") Обо мне
                     li.start__page_menu-item: a.start__page_menu-link(href="blog.html") Блог
+                .start__page_log
+                    h1.start__page_log-title АВТОРИЗУЙТЕСЬ
+                    .start__page_log-form1
+                        .start__page_log-icon1
+                        input(type="text").start__page_log-in1
+                    .start__page_log-form2
+                        .start__page_log-icon2
+                        input(type="text").start__page_log-in2
+                    .start__page_log-human
+                        label.start__page_log-block
+                            input(type="checkbox").start__page_log-check
+                            .start__page_log-text Я человек
+                    .start__page_log-desk Вы точно не робот?
+                    .start__page_log-row
+                        label.start__page_log-y
+                            input(type="radio").start__page_log-r
+                            .start__page_log-yes Да
+                        label.start__page_log-n
+                            input(type="radio").start__page_log-r
+                            .start__page_log-no Нет
+                    .start__page_log-menu: ul.start__page_log-items
+                        li.start__page_log-item: a.start__page_log-link(href="#") На главную
+                        li.start__page_log-item: a.start__page_log-link(href="#") Войти
             .start__copy Владимир Астахов | создано с любовью в LoftSchool | 2016
                                         
 
