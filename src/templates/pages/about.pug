@@ -4,4 +4,163 @@ block variables
     - var title = 'About'
 
 block content
-    h1 Обо мне 
+    .wrapper
+        section.section.hero
+            .hero__socials
+                ul.start__page_soc-items
+                    li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                        svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#vk")
+                    li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                        svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#github")
+                    li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                        svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#in") 
+            .hamburger
+                .hero__menu
+            .hero__title
+                svg.section__title-desc: use(xlink:href="./assets/images/sprite.svg#portfolio_header")
+            .hero__user.user
+                .user__img
+                    img.user__img-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                .user__name Владимир Астахов
+                .user__desc Личный сайт разработчика
+            a.hero__down(href="#")
+                svg.down-arrow: use(xlink:href="assets/images/sprite.svg#arrow_down")
+        section.section.about
+            .about__left
+                .about__left-title
+                    svg.about__left-desc: use(xlink:href="assets/images/sprite.svg#about_header")
+                    .block-title Обо мне
+                .about__left-content
+                    .user__desc-img
+                        img.user__desc-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                    .user__desc-title
+                        .block-subtitle Кто я
+                    .user__desk-text.text-content
+                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+
+            .about__right
+                .about__right-title
+                    .block-subtitle Чем я могу быть вам полезен
+                .about__right-text.text-content
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                .about__right-content
+                    ul.skills-list
+                        li.skills-list__item
+                            .skills-row
+                                .skills-row__title Frontend
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title HTML 5
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title CCS3
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title JavaScript jQuery
+                        li.skills-list__item
+                            .skills-row
+                                .skills-row__title Beckend
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title PHP
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title mySQL
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title Node.js npm
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title Mongo db
+                        li.skills-list__item
+                            .skills-row
+                                .skills-row__title WorkFlow
+                                ul.skills-row__list
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title Git
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title Gulp
+                                    li.skills-row__item
+                                        .skills
+                                            svg.skills-circles(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                            .skills__title Bower
+        section.section.map
+            .google-map
+            .map__contacts
+                .contacts
+                    .contacts__title
+                        .block__subtitle Контакты
+                    .contacts__desk
+                        ul.contacts__item
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                                .contacts-content skype_kdn
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                                .contacts-content astahov@gmail.com
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                                .contacts-content +7 931 200 93 24
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                                .contacts-content г. Новосибирск
+        footer.footer.footer__map
+            .footer__row
+                .container
+                    .footer__col.footer__col-left
+                        nav.menu
+                            ul.menu__list
+                                li.menu__item: a.menu__link(href="#") Мои работы
+                                li.menu__item: a.menu__link(href="#") Обо мне
+                                li.menu__item: a.menu__link(href="#") Блог
+                                li.menu__item: a.menu__link(href="#") Авторизация 
+                    .footer__col.footer__col-right
+                        ul.start__page_soc-items
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#github")
+                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#in")
+            .footer__row
+                .container
+                    .footer__col.footer__col-left
+                        .footer__text
+                            p Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.      
+                    .footer__col.footer__col-right
+                        .start__copy Владимир Астахов | создано с любовью в LoftSchool | 2016                       
+                                                
