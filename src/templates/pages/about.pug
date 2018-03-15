@@ -32,92 +32,79 @@ block content
                     .block-title Обо мне
                 .about__left-content
                     .user__desc-img
-                        img.user__desc-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                        img.user__desc-pic(src=('./assets/images/photo-about.jpg'))
                     .user__desc-title
                         .block-subtitle Кто я
                     .user__desk-text.text-content
-                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-
             .about__right
                 .about__right-title
-                    .block-subtitle Чем я могу быть вам полезен
+                    .block-subtitle Чем я могу быть 
+                    .block-subtitle-l вам полезен
                 .about__right-text.text-content
-                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
                 .about__right-content
                     ul.skills-list
                         li.skills-list__item
+                            .skills-list-title Frontend
                             .skills-row
-                                .skills-row__title Frontend
-                                ul.skills-row__list
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title HTML 5
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title CCS3
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title JavaScript jQuery
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 80 80")
+                                        circle.circle__first(r="30" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 40 40)")
+                                    .skills__title HTML 5
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 80 80")
+                                        circle.circle__first(r="30" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 40 40)")
+                                    .skills__title CCS3
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title JavaScript jQuery
                         li.skills-list__item
+                            .skills-list-title Beckend
                             .skills-row
-                                .skills-row__title Beckend
-                                ul.skills-row__list
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title PHP
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title mySQL
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title Node.js npm
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title Mongo db
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title PHP
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title mySQL
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title Node.js npm
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title Mongo db
                         li.skills-list__item
+                            .skills-list-title WorkFlow
                             .skills-row
-                                .skills-row__title WorkFlow
-                                ul.skills-row__list
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title Git
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title Gulp
-                                    li.skills-row__item
-                                        .skills
-                                            svg.skills-circles(viewBox="0 0 110 110")
-                                                circle.circle__first(r="45" cx="50" cy="50" fill="none")
-                                                circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
-                                            .skills__title Bower
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title Git
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title Gulp
+                                .skills
+                                    svg.skills-circles(viewBox="0 0 110 110")
+                                        circle.circle__first(r="45" cx="50" cy="50" fill="none")
+                                        circle.circle__second.circle-25(r="45" cx="50" cy="50" transform="rotate(-90 55 55)")
+                                    .skills__title Bower
         section.section.map
             .google-map
             .map__contacts
@@ -126,17 +113,21 @@ block content
                         .block__subtitle Контакты
                     .contacts__desk
                         ul.contacts__item
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item 
+                                a.start__page_soc-link(href="https://www.vk.com/") 
+                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
                                 .contacts-content skype_kdn
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item
+                                a.start__page_soc-link(href="https://www.vk.com/")
+                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
                                 .contacts-content astahov@gmail.com
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item
+                                a.start__page_soc-link(href="https://www.vk.com/")
+                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
                                 .contacts-content +7 931 200 93 24
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
+                            li.start__page_soc-item
+                                a.start__page_soc-link(href="https://www.vk.com/")
+                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
                                 .contacts-content г. Новосибирск
         footer.footer.footer__map
             .footer__row

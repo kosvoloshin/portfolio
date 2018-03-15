@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-attachment: fixed;
 }
 
 .hero__socials {
@@ -124,4 +125,275 @@
     width: 100%;
     fill: #fff;
     z-index: 2;
+}
+
+.about {
+    display: flex;
+    position: relative;
+}
+
+.about__left {
+    background-image: url('../images/about_bg_left.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.about__left {
+    width: 50%;
+    background-color: #efeee9;
+}
+
+.about__left-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about__left-desc {
+    fill: #e6e5e0;
+    position: absolute;
+}
+
+.block-title {
+    position: absolute;
+    font-family: 'BERNIER';
+    font-size: 63px;
+    color: #373e42;
+
+    &:before {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        position: absolute;
+        display: inline-block;
+        left: -42px;
+        top: 41px;
+    }
+
+    &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        position: absolute;
+        display: inline-block;
+        right: -38px;
+        top: 41px;
+    }
+}
+
+.about__left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__desc-img {
+    text-align: center;
+}
+
+.user__desc-pic {
+    width: 70%;
+}
+
+.block-subtitle {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
+
+    &:before {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 35px;
+    }
+
+    &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 35px;
+    }
+}
+
+.user__desk-text {
+    width: 70%;
+}
+
+.text-content {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #455a64;
+}
+
+.about__right {
+    width: 50%;
+    background-color: #eeebdf;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__right-title {
+    text-align: center;
+}
+
+.block-subtitle {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
+
+    &:before {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 35px;
+    }
+
+    &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 35px;
+    }
+}
+
+.block-subtitle-l {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
+}
+
+.about__right-text {
+    width: 90%;
+}
+
+.about__right-content {
+    width: 100%;
+}
+
+.skills-list {
+    display: none;
+}
+
+.skills-circles {
+    fill: none;
+    stroke-width: 15;
+  }
+  .circle__first {
+    stroke: #dfdcd5;
+  }
+  .circle__second {
+    stroke: #1bb696;
+    stroke-dasharray: .0010 282.6;
+    transition: all 1s;
+  }
+  
+  .skills-row {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+  }
+  
+  .skills-circles:hover .circle-0 {
+     stroke-dasharray: .001 282.6;
+  }
+  .skills-circles:hover .circle-10 {
+     stroke-dasharray: 28.26 282.6;
+  }
+  .skills-circles:hover .circle-15 {
+     stroke-dasharray: 42.39 282.6;
+  }
+  .skills-circles:hover .circle-20 {
+     stroke-dasharray: 56.52 282.6;
+  }
+  .skills-circles:hover .circle-25 {
+     stroke-dasharray: 70.65 282.6;
+  }
+  .skills-circles:hover .circle-30 {
+     stroke-dasharray: 84.78 282.6;
+  }
+  .skills-circles:hover .circle-35 {
+     stroke-dasharray: 98.91 282.6;
+  }
+  .skills-circles:hover .circle-40 {
+     stroke-dasharray: 113.04 282.6;
+  }
+  .skills-circles:hover .circle-45 {
+     stroke-dasharray: 127.17 282.6;
+  }
+  .skills-circles:hover .circle-50 {
+     stroke-dasharray: 141.3 282.6;
+  }
+  .skills-circles:hover .circle-55 {
+     stroke-dasharray: 155.43 282.6;
+  }
+  .skills-circles:hover .circle-60 {
+     stroke-dasharray: 169.56 282.6;
+  }
+  .skills-circles:hover .circle-65 {
+     stroke-dasharray: 183.69 282.6;
+  }
+  .skills-circles:hover .circle-70 {
+     stroke-dasharray: 197.82 282.6;
+  }
+  .skills-circles:hover .circle-75 {
+     stroke-dasharray: 211.95 282.6;
+  }
+  .skills-circles:hover .circle-80 {
+     stroke-dasharray: 226.08 282.6;
+  }
+  .skills-circles:hover .circle-85 {
+     stroke-dasharray: 240.21 282.6;
+  }
+  .skills-circles:hover .circle-90 {
+     stroke-dasharray: 254.34 282.6;
+  }
+  .skills-circles:hover .circle-95 {
+     stroke-dasharray: 268.47 282.6;
+  }
+  .skills-circles:hover .circle-100 {
+     stroke-dasharray: 282.6 282.6;
+  }
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__contacts {
+    height: 290px;
+    width: 380px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    border-radius: 5px;
+}
+
+.contacts {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__title {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
 }
