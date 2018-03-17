@@ -1,0 +1,131 @@
+.hero {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.hero__socials {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.start__page_soc-icon--white {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: rgba($color: #fff, $alpha: 0.7);
+
+    &:hover {
+        fill: rgba($color: #fff, $alpha: 1.0);
+    }
+}
+
+.hamburger {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.hero__menu {
+    display: inline-block;
+    background: #fff;
+    width: 40px;
+    height: 5px;
+    border-radius: 2px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background: #fff;
+        width: 40px;
+        height: 5px;
+        border-radius: 2px;
+        position: absolute;
+        top: 10px;
+    }
+
+    &:after {
+        content: "";
+        background: #fff;
+        width: 40px;
+        height: 5px;
+        border-radius: 2px;
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+.hero__title {
+    width: 100%;
+    height: 35%;
+}
+
+.section__title-desc {
+    width: 95%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: #fff;
+    z-index: 1;
+    opacity: .06;
+}
+
+.hero__user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.user__img-pic {
+    height: 141px;
+    width: 141px;
+    background-size: cover;
+    background-position: 50%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.user__name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+}
+
+.user__desc {
+    font-family: 'Roboto';
+    font-size: 16px;    
+    color: #b9d1d7;
+}
+
+.hero__down{
+    width: 27px;
+    height: 17px;
+    position: absolute;
+    bottom: 90px;
+    background: none;
+    border: initial;
+    cursor: pointer;
+}
+
+.down-arrow {
+    height: 100%;
+    width: 100%;
+    fill: rgba($color: #fff, $alpha: 0.7);
+    z-index: 2;
+}
