@@ -36,37 +36,38 @@ block content
         section.a-works
             .a-works__title
                 svg.a-works__title-desk: use(xlink:href="assets/images/sprite.svg#about_header")
-                .block-title Что обо мне говорят
+                .a-works__title-b
+                    .block-title Что обо мне говорят
         section.section.reviews
             .reviews__content
                 .reviews-l
-                    .reviews-l__icon: img(srs="./assets/images/quot.png")
-                    .reviews-l__text
+                    .reviews__icon: img(src="./assets/images/quot.png")
+                    .reviews__text
                         p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    .reviews-l__user
-                        .reviews-l__user-pic: img(src="./assets/images/photo-about.jpg")
-                        .reviews-l__user-info
-                            .reviews-l__user-info_name Ковальчук Дмитрий
-                            .reviews-l__user-info_pos основатель Loftschool
+                    .reviews__user
+                        .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                        .reviews__user-info
+                            .reviews__user-info_name Ковальчук Дмитрий
+                            .reviews__user-info_pos основатель Loftschool
                 .reviews-r
-                    .reviews-r__icon: img(srs="./assets/images/quot.png")
-                    .reviews-r__text
-                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    .reviews-r__user
-                        .reviews-r__user-pic: img(src="./assets/images/photo-about.jpg")
-                        .reviews-r__user-info
-                            .reviews-r__user-info_name Ковальчук Дмитрий
-                            .reviews-r__user-info_pos основатель Loftschool
+                    .reviews__icon: img(src="./assets/images/quot.png")
+                    .reviews__text
+                        p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .reviews__user
+                        .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                        .reviews__user-info
+                            .reviews__user-info_name Сабанцев Владимир
+                            .reviews__user-info_pos преподаватель
             .reviews__form.form
                 .form-desk
                     .form-desk__title
-                        .block-title Связаться со мной
-                    .form-desk__name
+                        .block-title-b Связаться со мной
+                    .form-desk__row
                         label.visuallyhidden  Имя
-                        input.form-desk__name-b(type="text" name="name" placeholder="Имя")
-                    .form-desk__mail
+                        input.form-desk__row-b(type="text" name="name" placeholder="Имя")
+                    .form-desk__row
                         label.visuallyhidden  Email
-                        input.form-desk__mail-b(type="text" name="email" placeholder="Email")
+                        input.form-desk__row-b(type="text" name="email" placeholder="Email")
                     .form-desk__mes
                         label.visuallyhidden  Ваше сообщение
                         textarea.form-desk__mes-b(name="message" placeholder="Ваше сообщение")
@@ -75,4 +76,4 @@ block content
                         button.form-btns__submit(type="submit") Отправить
                     .form-btns__item
                         button.form-btns__delete(type="reset") Очистить
-        include ../common/footer.pug 
+        include ../common/footer-works.pug 

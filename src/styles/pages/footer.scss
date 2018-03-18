@@ -7,6 +7,24 @@
     position: absolute;
     top: calc(300% - 147px);    
 }
+.footer__works {
+    width: 100%;
+    height: 147px;
+    background: rgba($color: #373e42, $alpha: 0.7);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(400% - 88px);
+}
+
+.footer__blog {
+    width: 100%;
+    height: 147px;
+    background: rgba($color: #373e42, $alpha: 0.7);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
 
 .footer__row {
     display: flex;
@@ -42,6 +60,11 @@
 .menu__link {
     text-decoration: none;
     color: #fff;
+    transition: .3s;
+
+    &:hover {
+        color: #00bfa5;
+    }
 }
 
 .start__page_soc-items--f {
@@ -62,6 +85,7 @@
     fill: rgba($color: #373e42, $alpha: 0.5);
     stroke-width: 0.5px;
     stroke: rgba($color: #fff, $alpha: 0.8);
+    transition: .3s;
 
     &:hover {
         fill: #fff;

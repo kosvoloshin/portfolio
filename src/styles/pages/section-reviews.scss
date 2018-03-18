@@ -1,0 +1,220 @@
+.reviews {
+    background-image: url('../images/bg-rev.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__content {
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: center;
+}
+
+.reviews-l {
+    width: 380px;
+    margin-right: 10px;
+    margin-top: 45px;
+}
+
+.reviews__text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    color: #455a64;
+}
+
+.reviews__user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reviews__user-pic {
+    height: 77px;
+    width: 77px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.reviews__user-info {
+    margin-left: 23px;
+}
+
+.reviews__user-info_name {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 16px;
+    color: #00bfa5;
+}
+
+.reviews__user-info_pos {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    color: #00bfa5;
+}
+
+.reviews-r {
+    width: 380px;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+
+.reviews__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-desk {
+    height: 392px;
+    width: 380px;
+    display: flex;
+    background-color: rgba(218,219,214,.6);
+    flex-direction: column;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form-desk__title {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
+    text-align: center;
+    padding-top: 20px;
+
+    &:before {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
+
+.block-title-b {
+    display: inline-block;
+}
+
+.form-desk__row {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form-desk__row-b {
+    height: 45px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    padding: 0 20px;
+}
+
+.form-desk__mes {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form-desk__mes-b {
+    min-height: 140px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    border: none;
+    padding: 20px 20px;
+    resize: none;
+}
+
+.form-btns {
+    height: 45px;
+    width: 380px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+}
+
+.form-btns__item {
+    flex-basis: 50%;
+    display: inherit;
+
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        height: 45px;
+        background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+
+    &:last-child:after {
+        display: none;
+    }
+}
+
+.form-btns__submit {
+    height: 100%;
+    width: 100%;
+    background-color: #00bfa5;
+    border: initial;
+    text-decoration: none;
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    padding: 14px 53px;
+    transition: .3s;
+
+    &:hover {
+        background-color: #fff;
+        color: #00bfa5;
+    }
+}
+
+.form-btns__delete {
+    height: 100%;
+    width: 100%;
+    background-color: #00bfa5;
+    border: initial;
+    text-decoration: none;
+    color: #fff;
+    border-bottom-right-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    padding: 14px 53px;
+    transition: .3s;
+
+    &:hover {
+        background-color: #fff;
+        color: #00bfa5;
+    }
+}
+

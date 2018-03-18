@@ -1,0 +1,19 @@
+section.section.hero.blog
+    .hero__socials
+        ul.start__page_soc-items
+            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#vk")
+            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#github")
+            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
+                svg.start__page_soc-icon--white: use(xlink:href="assets/images/sprite.svg#in") 
+    .hamburger
+        .hero__menu
+    .hero__title
+        svg.section__title-desc--blog: use(xlink:href="./assets/images/sprite.svg#blog_header")
+    .hero__user.user
+        .user__img
+            img.user__img-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+        .user__blog БЛОГ
+        .user__desc-blog Статьи, которые я написал
+    include ./triangle-blog.pug

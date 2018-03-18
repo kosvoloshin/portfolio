@@ -24,6 +24,7 @@
     top: 25px;
     right: 100px;
     cursor: pointer;
+    transition: .3s;
 
     &:hover {
         background-color: #fff;
@@ -99,6 +100,7 @@
     display: inline-block;
     vertical-align: middle;
     fill: rgba($color: #009688, $alpha: 0.8);
+    transition: .3s;
 
     &:hover {
         fill: rgba($color: #04796e, $alpha: 0.8);
@@ -124,6 +126,7 @@
     background-color: rgba($color: #009688, $alpha: 0.8);
     height: 100%;
     display: flex;
+    transition: .3s;
     
     &:first-child {
         border-bottom-left-radius: 5px;
@@ -168,4 +171,8 @@
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 300;
+}
+
+.start__page_log {
+    display: none;
 }
