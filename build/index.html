@@ -9,6 +9,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -45,18 +46,29 @@
             </ul>
           </div>
           <div class="start__page_log">
-            <h1 class="start__page_log-title">АВТОРИЗУЙТЕСЬ</h1>
-            <div class="start__page_log-form1">
-              <div class="start__page_log-icon1"></div>
-              <input class="start__page_log-in1" type="text">
+            <h1 class="start__page_log-title">Авторизуйтесь</h1>
+            <div class="start__page_log-form">
+              <div class="start__page_log-icon">
+                <svg class="start__page_log-pic">
+                  <use xlink:href="assets/images/sprite.svg#login"></use>
+                </svg>
+              </div>
+              <label class="visuallyhidden">Логин</label>
+              <input class="start__page_log-in" type="text" name="login" placeholder="Логин">
             </div>
-            <div class="start__page_log-form2">
-              <div class="start__page_log-icon2"></div>
-              <input class="start__page_log-in2" type="text">
+            <div class="start__page_log-form">
+              <div class="start__page_log-icon">
+                <svg class="start__page_log-pic">
+                  <use xlink:href="assets/images/sprite.svg#password"></use>
+                </svg>
+                <label class="visuallyhidden">Пароль</label>
+              </div>
+              <input class="start__page_log-in" type="text" name="password" placeholder="Пароль">
             </div>
             <div class="start__page_log-human">
               <label class="start__page_log-block">
-                <input class="start__page_log-check" type="checkbox">
+                <input class="start__page_log-check visuallyhidden" type="checkbox" name="human">
+                <div class="start__page_log-fake"></div>
                 <div class="start__page_log-text">Я человек</div>
               </label>
             </div>
@@ -71,12 +83,12 @@
                 <div class="start__page_log-no">Нет</div>
               </label>
             </div>
-            <div class="start__page_log-menu">
-              <ul class="start__page_log-items">
-                <li class="start__page_log-item"><a class="start__page_log-link" href="#">На главную</a></li>
-                <li class="start__page_log-item"><a class="start__page_log-link" href="#">Войти</a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="start__page_log-menu">
+            <ul class="start__page_log-items">
+              <li class="start__page_log-item"><a class="start__page_log-link" href="index.html">На главную</a></li>
+              <li class="start__page_log-item"><a class="start__page_log-link" href="#">Войти</a></li>
+            </ul>
           </div>
         </div>
         <div class="start__copy">Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
