@@ -45,11 +45,13 @@ block content
                     .start__page_log-desk Вы точно не робот?
                     .start__page_log-row
                         label.start__page_log-y
-                            input(type="radio").start__page_log-r
-                            .start__page_log-yes Да
+                            input(type="radio" name="options" value="да").start__page_log-r.visuallyhidden
+                            .start__page_radio-fake
+                            .start__page_log-t Да
                         label.start__page_log-n
-                            input(type="radio").start__page_log-r
-                            .start__page_log-no Нет
+                            input(type="radio" name="options" value="нет").start__page_log-r.visuallyhidden
+                            .start__page_radio-fake
+                            .start__page_log-t Не уверен
                 .start__page_log-menu: ul.start__page_log-items
                     li.start__page_log-item: a.start__page_log-link(href="index.html") На главную
                     li.start__page_log-item: a.start__page_log-link(href="#") Войти

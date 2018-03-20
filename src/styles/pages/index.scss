@@ -43,12 +43,12 @@
 }
 
 .start__page-info {
-    background-color: rgba($color: #fff, $alpha: 0.8);
+    background-color: rgba($color: #fff, $alpha: 0.7);
     width: 100%;
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    display: none;
+    //display: none;
 }
 
 .start__page-photo {
@@ -113,7 +113,7 @@
     height: 45px;
     position: absolute;
     bottom: 0;
-    display: none;
+    //display: none;
 }
 
 .start__page_menu-items {
@@ -176,7 +176,7 @@
 }
 
 .start__page_log {
-    //display: none;
+    display: none;
     background-color: rgba($color: #fff, $alpha: 0.8);
     width: 100%;
     height: 350px;
@@ -251,6 +251,7 @@
     height: 45px;
     position: absolute;
     bottom: 0;
+    display: none;
 }
 
 .start__page_log-items {
@@ -309,6 +310,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .start__page_log-check {
@@ -330,4 +332,81 @@
     font-size: 16px;
     color: #fff;
     padding-left: 4px;
+}
+
+.start__page_log-text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #717f86;
+}
+
+.start__page_log-desk {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    color: #6e7d84;
+    padding-bottom: 12px;
+}
+
+.start__page_log-row {
+    display: flex;
+    justify-content: center;
+}
+
+label.start__page_log-y {
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.start__page_log-r {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.start__page_radio-fake {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 8px;
+        height: 8px;
+        background-color: #00bfa5;
+        border-radius: 50%;
+        display: none;
+    }
+}
+
+.start__page_log-r:checked + .start__page_radio-fake:after{
+    display: inline-block;
+}
+
+.start__page_log-r:checked ~ .start__page_log-t {
+    color: #2ec7b2;
+}
+
+.start__page_log-t {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    color: #717f86;
+    display: inline-block;
+}
+
+.start__page_log-n {
+    margin-left: 50px;
 }
