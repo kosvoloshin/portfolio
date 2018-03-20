@@ -9,7 +9,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
-    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,10 +30,8 @@
                   <use xlink:href="assets/images/sprite.svg#in"> </use>
                 </svg></a></li>
           </ul>
-        </div>
-        <div class="hamburger">
-          <div class="hero__menu"></div>
-        </div>
+        </div><a class="hamburger" id="openFull">
+          <div class="hero__menu"></div></a>
         <div class="hero__title">
           <svg class="section__title-desc">
             <use xlink:href="./assets/images/sprite.svg#portfolio_header"></use>
