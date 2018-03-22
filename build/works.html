@@ -15,18 +15,18 @@
     <div class="wrapper">
       <h1 class="visuallyhidden">Мои работы</h1>
       <section class="section hero">
-        <div class="hero__socials">
-          <ul class="start__page_soc-items">
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+        <div class="socials--hero">
+          <ul class="socials__list">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#vk"></use>
                 </svg></a></li>
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#github"></use>
                 </svg></a></li>
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#in"> </use>
                 </svg></a></li>
           </ul>
@@ -37,7 +37,7 @@
             <use xlink:href="./assets/images/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
-        <div class="hero__user user">
+        <div class="user">
           <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
           <div class="user__name">Владимир Астахов</div>
           <div class="user__desc">Личный сайт разработчика</div>
@@ -58,21 +58,21 @@
             <use xlink:href="assets/images/sprite.svg#works_header"></use>
           </svg>
           <div class="p-works__title-b">
-            <div class="block-title--b">Мои работы </div>
+            <h2 class="block-title-b">Мои работы </h2>
           </div>
         </div>
       </section>
       <section class="section works">
         <div class="works-left">
           <div class="works-left__title">
-            <div class="block-title-w">Сайт школы онлайн</div>
-            <div class="block-title-w1">образования</div>
+            <div class="block-title__w">Сайт школы онлайн</div>
+            <div class="block-title__w1">образования</div>
           </div>
           <div class="works-left__tech">HTML, CSS, JAVASCRIPT</div>
           <button class="works-left__btn" type="button">
-            <svg class="works-left__btn_icon">
+            <svg class="works-left__btn-icon">
               <use xlink:href="assets/images/sprite.svg#link"></use>
-            </svg><span class="works-left__btn_text">Посмотреть сайт</span>
+            </svg><span class="works-left__btn-text">Посмотреть сайт</span>
           </button>
         </div>
         <div class="works-right">
@@ -80,8 +80,8 @@
             <div class="works-right__slider-item1"><img class="works-right__slider-pic1" src="./assets/images/item1.png"></div>
             <div class="works-right__slider-item2">
               <div class="works-right__slider-pic2">
-                <button class="hero__down--works" type="button">
-                  <svg class="down-arrow--works">
+                <button class="slider-down" type="button">
+                  <svg class="slider-down__works">
                     <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
                   </svg>
                 </button>
@@ -89,8 +89,8 @@
             </div>
             <div class="works-right__slider-item3">
               <div class="works-right__slider-pic3">
-                <button class="hero__down--works" type="button">
-                  <svg class="down-arrow--works">
+                <button class="slider-down" type="button">
+                  <svg class="slider-down__works">
                     <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
                   </svg>
                 </button>
@@ -105,13 +105,13 @@
             <use xlink:href="assets/images/sprite.svg#about_header"></use>
           </svg>
           <div class="a-works__title-b">
-            <div class="block-title">Что обо мне говорят</div>
+            <h2 class="block-title-a">Что обо мне говорят</h2>
           </div>
         </div>
       </section>
       <section class="section reviews">
         <div class="reviews__content">
-          <div class="reviews-l">
+          <div class="reviews__info">
             <div class="reviews__icon"><img src="./assets/images/quot.png"></div>
             <div class="reviews__text">
               <p>Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
@@ -119,12 +119,12 @@
             <div class="reviews__user">
               <div class="reviews__user-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
               <div class="reviews__user-info">
-                <div class="reviews__user-info_name">Ковальчук Дмитрий</div>
-                <div class="reviews__user-info_pos">основатель Loftschool</div>
+                <div class="reviews__user-info-name">Ковальчук Дмитрий</div>
+                <div class="reviews__user-info-pos">основатель Loftschool</div>
               </div>
             </div>
           </div>
-          <div class="reviews-r">
+          <div class="reviews__info--r">
             <div class="reviews__icon"><img src="./assets/images/quot.png"></div>
             <div class="reviews__text">
               <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
@@ -132,8 +132,8 @@
             <div class="reviews__user">
               <div class="reviews__user-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
               <div class="reviews__user-info">
-                <div class="reviews__user-info_name">Сабанцев Владимир</div>
-                <div class="reviews__user-info_pos">преподаватель</div>
+                <div class="reviews__user-info-name">Сабанцев Владимир</div>
+                <div class="reviews__user-info-pos">преподаватель</div>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@
         <div class="reviews__form form">
           <div class="form-desk">
             <div class="form-desk__title">
-              <div class="block-title-b">Связаться со мной</div>
+              <h3 class="block-title-form">Связаться со мной</h3>
             </div>
             <div class="form-desk__row">
               <label class="visuallyhidden"> Имя</label>
@@ -179,17 +179,17 @@
             </nav>
           </div>
           <div class="footer__col footer__col-right">
-            <ul class="start__page_soc-items--f">
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.vk.com/">
-                  <svg class="start__page_soc-icon--f">
+            <ul class="socials__list">
+              <li class="socials__item--black"><a class="socials__link" href="https://www.vk.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#vk_round"></use>
                   </svg></a></li>
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.github.com/">
-                  <svg class="start__page_soc-icon--f">
+              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#github_round"></use>
                   </svg></a></li>
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.linkedin.com/">
-                  <svg class="start__page_soc-icon--f">
+              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#in_round"></use>
                   </svg></a></li>
             </ul>
