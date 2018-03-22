@@ -33,10 +33,12 @@
     padding-top: 30px;
 }
 
-.block__subtitle--contacts {
+.block__subtitle-contacts {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
+    margin: 0 auto;
+    font-weight: normal;
 
     &:before {
         content: '';
@@ -64,22 +66,25 @@
     padding-top: 30px;
 }
 
-.contacts__item--c {
+.contacts__item {
     width: 100%;
     display: flex;
-    flex-direction: column;
-}
-
-.start__page_soc-item--c {
-    display: inline-flex;
     padding-bottom: 15px;
 }
 
-.start__page_soc-link--c {
+.contacts__link {
     margin-right: 15px;
 }
 
-.contacts-content {
+.contacts__icon {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: rgba($color: #009688, $alpha: 0.8);
+}
+
+.contacts__content {
     font-family: 'Rodoto';
     font-weight: 500;
     color: #657981;

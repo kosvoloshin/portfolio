@@ -17,14 +17,14 @@
     height: 400px;
 }
 
-.hero__socials {
+.socials--hero {
     display: flex;
     position: absolute;
     top: 30px;
     left: 30px;
 }
 
-.start__page_soc-icon--white {
+.socials__icon--white {
     height: 25px;
     width: 25px;
     display: inline-block;
@@ -92,7 +92,7 @@
     opacity: .1;
 }
 
-.section__title-desc--blog {
+.section__title-desc-blog {
     width: 95%;
     height: 40%;
     position: absolute;
@@ -104,7 +104,7 @@
     opacity: .1;
 }
 
-.hero__user {
+.user {
     display: flex;
     flex-direction: column;
     align-items: center;

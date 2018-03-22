@@ -40,7 +40,9 @@
     position: absolute;
     font-family: 'BERNIER';
     font-size: 63px;
+    font-weight: normal;
     color: #373e42;
+    margin: 0 auto;
 
     &:before {
         content: '';
@@ -84,6 +86,8 @@
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
+    margin: 0 auto;
+    font-weight: normal;
 
     &:before {
         content: '';
@@ -132,36 +136,12 @@
     text-align: center;
 }
 
-.block-subtitle {
-    font-family: 'BERNIER';
-    font-size: 35px;
-    color: #455a64;
-
-    &:before {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 22px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 35px;
-    }
-
-    &:after {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 22px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 35px;
-    }
-}
-
 .block-subtitle-l {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
+    margin: 0 auto;
+    font-weight: normal;
 }
 
 .about__right-text {
@@ -179,7 +159,7 @@
     flex-direction: column;
 }
 
-.skills-list-title {
+.skills-list__title {
     font-family: 'Roboto';
     font-size: 28px;
     font-weight: 500;
@@ -197,7 +177,6 @@
     height: 110px;
     width: 110px;
     position: relative;
-    margin: 0 10px;
 }
 
 .skills-circles {

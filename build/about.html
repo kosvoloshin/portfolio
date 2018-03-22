@@ -26,18 +26,18 @@
         </nav>
       </div>
       <section class="section hero">
-        <div class="hero__socials">
-          <ul class="start__page_soc-items">
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+        <div class="socials--hero">
+          <ul class="socials__list">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#vk"></use>
                 </svg></a></li>
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#github"></use>
                 </svg></a></li>
-            <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                <svg class="start__page_soc-icon--white">
+            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                <svg class="socials__icon--white">
                   <use xlink:href="assets/images/sprite.svg#in"> </use>
                 </svg></a></li>
           </ul>
@@ -48,7 +48,7 @@
             <use xlink:href="./assets/images/sprite.svg#portfolio_header"></use>
           </svg>
         </div>
-        <div class="hero__user user">
+        <div class="user">
           <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
           <div class="user__name">Владимир Астахов</div>
           <div class="user__desc">Личный сайт разработчика</div>
@@ -68,12 +68,12 @@
             <svg class="about__left-desc">
               <use xlink:href="assets/images/sprite.svg#about_header"></use>
             </svg>
-            <div class="block-title">Обо мне</div>
+            <h2 class="block-title">Обо мне</h2>
           </div>
           <div class="about__left-content">
             <div class="user__desc-img"><img class="user__desc-pic" src="./assets/images/photo-about.jpg"></div>
             <div class="user__desc-title">
-              <div class="block-subtitle">Кто я</div>
+              <h3 class="block-subtitle">Кто я</h3>
             </div>
             <div class="user__desk-text text-content">
               <p>Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
@@ -86,8 +86,8 @@
         </svg>
         <div class="about__right">
           <div class="about__right-title">
-            <div class="block-subtitle">Чем я могу быть </div>
-            <div class="block-subtitle-l">вам полезен</div>
+            <h3 class="block-subtitle">Чем я могу быть </h3>
+            <h3 class="block-subtitle-l">вам полезен</h3>
           </div>
           <div class="about__right-text text-content">
             <p>Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</p>
@@ -95,7 +95,7 @@
           <div class="about__right-content">
             <ul class="skills-list">
               <li class="skills-list__item">
-                <div class="skills-list-title">Frontend</div>
+                <div class="skills-list__title">Frontend</div>
                 <div class="skills-row">
                   <div class="skills">
                     <svg class="skills-circles" viewBox="0 0 110 110">
@@ -121,7 +121,7 @@
                 </div>
               </li>
               <li class="skills-list__item">
-                <div class="skills-list-title">Beckend</div>
+                <div class="skills-list__title">Beckend</div>
                 <div class="skills-row">
                   <div class="skills">
                     <svg class="skills-circles" viewBox="0 0 110 110">
@@ -154,7 +154,7 @@
                 </div>
               </li>
               <li class="skills-list__item">
-                <div class="skills-list-title">WorkFlow</div>
+                <div class="skills-list__title">WorkFlow</div>
                 <div class="skills-row">
                   <div class="skills">
                     <svg class="skills-circles" viewBox="0 0 110 110">
@@ -188,33 +188,41 @@
         <div class="map__contacts">
           <div class="contacts">
             <div class="contacts__title">
-              <div class="block__subtitle--contacts">Контакты</div>
+              <h2 class="block__subtitle-contacts">Контакты</h2>
             </div>
             <div class="contacts__desk">
-              <ul class="contacts__item--c">
-                <li class="start__page_soc-item--c"><a class="start__page_soc-link--c" href="https://www.vk.com/"> 
-                    <svg class="start__page_soc-icon">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts__link"> 
+                    <svg class="contacts__icon">
                       <use xlink:href="assets/images/sprite.svg#skype"></use>
-                    </svg></a>
+                    </svg>
+                  </div>
                   <div class="contacts-content">skype_kdn</div>
                 </li>
-                <li class="start__page_soc-item--c"><a class="start__page_soc-link--c" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
+                <li class="contacts__item">
+                  <div class="contacts__link">
+                    <svg class="contacts__icon">
                       <use xlink:href="assets/images/sprite.svg#envelope"></use>
-                    </svg></a>
+                    </svg>
+                  </div>
                   <div class="contacts-content">astahov@gmail.com</div>
                 </li>
-                <li class="start__page_soc-item--c"><a class="start__page_soc-link--c" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
+                <li class="contacts__item">
+                  <div class="contacts__link">
+                    <svg class="contacts__icon">
                       <use xlink:href="assets/images/sprite.svg#phone"></use>
-                    </svg></a>
+                    </svg>
+                  </div>
                   <div class="contacts-content">+7 931 200 93 24</div>
                 </li>
-                <li class="start__page_soc-item--c"><a class="start__page_soc-link--c" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
+                <li class="contacts__item">
+                  <div class="contacts__link">
+                    <svg class="contacts__icon">
                       <use xlink:href="assets/images/sprite.svg#map_marker"></use>
-                    </svg></a>
-                  <div class="contacts-content">г. Новосибирск, ул. Инская, д.5</div>
+                    </svg>
+                  </div>
+                  <div class="contacts__content">г. Новосибирск, ул. Инская, д.5</div>
                 </li>
               </ul>
             </div>
@@ -234,17 +242,17 @@
             </nav>
           </div>
           <div class="footer__col footer__col-right">
-            <ul class="start__page_soc-items--f">
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.vk.com/">
-                  <svg class="start__page_soc-icon--f">
+            <ul class="socials__list">
+              <li class="socials__item--black"><a class="socials__link" href="https://www.vk.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#vk_round"></use>
                   </svg></a></li>
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.github.com/">
-                  <svg class="start__page_soc-icon--f">
+              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#github_round"></use>
                   </svg></a></li>
-              <li class="start__page_soc-item--f"><a class="start__page_soc-link" href="https://www.linkedin.com/">
-                  <svg class="start__page_soc-icon--f">
+              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
+                  <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#in_round"></use>
                   </svg></a></li>
             </ul>

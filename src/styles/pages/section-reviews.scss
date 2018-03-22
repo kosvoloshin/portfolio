@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-.reviews-l {
+.reviews__info {
     width: 380px;
     margin-right: 10px;
     margin-top: 45px;
@@ -50,21 +50,21 @@
     margin-left: 23px;
 }
 
-.reviews__user-info_name {
+.reviews__user-info-name {
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 16px;
     color: #00bfa5;
 }
 
-.reviews__user-info_pos {
+.reviews__user-info-pos {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
     color: #00bfa5;
 }
 
-.reviews-r {
+.reviews__info--r {
     width: 380px;
     margin-left: 10px;
     margin-top: 45px;
@@ -87,12 +87,13 @@
     border-top-right-radius: 5px;
 }
 
-.form-desk__title {
+.block-title-form {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
     text-align: center;
     padding-top: 20px;
+    margin: 0 auto;
 
     &:before {
         content: '';
@@ -113,10 +114,6 @@
         vertical-align: middle;
         margin-left: 10px;
     }
-}
-
-.block-title-b {
-    display: inline-block;
 }
 
 .form-desk__row {

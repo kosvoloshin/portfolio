@@ -15,7 +15,7 @@
     margin-bottom: 40px;
 }
 
-.block-title-w {
+.block-title__w {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
@@ -41,7 +41,7 @@
     }
 }
 
-.block-title-w1 {
+.block-title__w1 {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
@@ -83,11 +83,11 @@
     }
 }
 
-.works-left__btn:hover .works-left__btn_icon {
+.works-left__btn:hover .works-left__btn-icon {
     fill: #00bfa5;
 }
 
-.works-left__btn_icon {
+.works-left__btn-icon {
     height: 19px;
     width: 21px;
     fill: #fff;
@@ -132,16 +132,27 @@
     height: 100%;
 }
 
-.hero__down--works {
+.slider-down {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    bottom: 90px;
     background: none;
     border: initial;
     cursor: pointer;
+    z-index: 10;
+
+    &:hover .slider-down__works {
+        fill: rgba($color: #fff, $alpha: 1.0);
+    }
 }
 
-.down-arrow--works {
-    height: 27px;
-    width: 43px;
-    fill: #fff;
+.slider-down__works {
+    height: 100%;
+    width: 100%;
+    fill: rgba($color: #fff, $alpha: 0.7);
+    z-index: 10;
+    transition: .3s;
 }
 
 
