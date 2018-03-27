@@ -9,21 +9,32 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
   </head>
   <body>
     <div class="wrapper">
+      <h1 class="visuallyhidden">Главная</h1>
       <div class="start">
-        <div class="start__login-btn"><a class="login__btn-link">Авторизоваться</a></div>
+        <div class="start__login-btn"><a class="login__btn-link" href="#">Авторизоваться</a></div>
         <div class="start__page">
           <div class="start__page-info">
-            <div class="start__page-photo"></div>
+            <div class="start__page-photo" style="background-image: url('./assets/images/photo.png')"></div>
             <div class="start__page-name">Владимир Астахов</div>
             <div class="start__page-desk">Личный сайт веб разработчика</div>
             <div class="start__page_soc">
               <ul class="start__page_soc-items">
-                <li class="start__page_soc-item"><a class="start__page_social-link" href="https://www.vk.com/"></a></li>
-                <li class="start__page_soc-item"><a class="start__page_social-link" href="https://www.vk.com/"></a></li>
-                <li class="start__page_soc-item"><a class="start__page_social-link" href="https://www.vk.com/"></a></li>
+                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
+                    <svg class="start__page_soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
+                    <svg class="start__page_soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
+                    <svg class="start__page_soc-icon">
+                      <use xlink:href="assets/images/sprite.svg#in"></use>
+                    </svg></a></li>
               </ul>
             </div>
           </div>
@@ -32,6 +43,51 @@
               <li class="start__page_menu-item"><a class="start__page_menu-link" href="works.html">Мои работы</a></li>
               <li class="start__page_menu-item"><a class="start__page_menu-link" href="about.html">Обо мне</a></li>
               <li class="start__page_menu-item"><a class="start__page_menu-link" href="blog.html">Блог</a></li>
+            </ul>
+          </div>
+          <div class="start__page_log">
+            <h1 class="start__page_log-title">Авторизуйтесь</h1>
+            <div class="start__page_log-form">
+              <div class="start__page_log-icon">
+                <svg class="start__page_log-pic">
+                  <use xlink:href="assets/images/sprite.svg#login"></use>
+                </svg>
+              </div>
+              <label class="visuallyhidden">Логин</label>
+              <input class="start__page_log-in" type="text" name="login" placeholder="Логин">
+            </div>
+            <div class="start__page_log-form">
+              <div class="start__page_log-icon">
+                <svg class="start__page_log-pic">
+                  <use xlink:href="assets/images/sprite.svg#password"></use>
+                </svg>
+                <label class="visuallyhidden">Пароль</label>
+              </div>
+              <input class="start__page_log-in" type="text" name="password" placeholder="Пароль">
+            </div>
+            <div class="start__page_log-human">
+              <label class="start__page_log-block">
+                <input class="start__page_log-check visuallyhidden" type="checkbox" name="human">
+                <div class="start__page_log-fake"></div>
+                <div class="start__page_log-text">Я человек</div>
+              </label>
+            </div>
+            <div class="start__page_log-desk">Вы точно не робот?</div>
+            <div class="start__page_log-row">
+              <label class="start__page_log-y">
+                <input class="start__page_log-r" type="radio">
+                <div class="start__page_log-yes">Да</div>
+              </label>
+              <label class="start__page_log-n">
+                <input class="start__page_log-r" type="radio">
+                <div class="start__page_log-no">Нет</div>
+              </label>
+            </div>
+          </div>
+          <div class="start__page_log-menu">
+            <ul class="start__page_log-items">
+              <li class="start__page_log-item"><a class="start__page_log-link" href="index.html">На главную</a></li>
+              <li class="start__page_log-item"><a class="start__page_log-link" href="#">Войти</a></li>
             </ul>
           </div>
         </div>

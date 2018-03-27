@@ -1,0 +1,105 @@
+.blog-nav {
+    background-color: #fff;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-nav__list {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blog-nav__items {
+    width: 270px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.blog-nav__item {
+    text-align: end;
+    margin-bottom: 20px;
+    height: 42px;
+}
+
+.blog-nav__link {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #373e42;
+    text-decoration: none;
+    line-height: 1.42;
+
+    &:hover {
+        color: #00bfa5;
+        }
+}
+
+.main-blog {
+    width: 67%;
+    margin-left: 100px;
+}
+
+.main-blog__items {
+    max-width: 680px;
+}
+
+.main-blog__item {
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+
+    &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 95%;
+        max-width: 680px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    &:last-child:after {
+        opacity: 0;
+    }
+}
+
+.main-blog__title {
+    font-family: 'BERNIER';
+    font-size: 35px;
+    color: #455a64;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+.main-blog__date {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #00bfa5;
+    text-decoration: none;
+    line-height: 1.42;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main-blog__content {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #373e42;
+    text-decoration: none;
+    line-height: 1.42;
+
+   /* &:after {
+        content: '';
+        background: rgba($color: #373e42, $alpha: 0.5);
+        height: 5px;
+        width: 680px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    &:last-child:after {
+        opacity: 0;
+    }*/
+}
