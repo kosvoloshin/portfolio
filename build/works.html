@@ -9,7 +9,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,8 +30,10 @@
                   <use xlink:href="assets/images/sprite.svg#in"> </use>
                 </svg></a></li>
           </ul>
-        </div><a class="hamburger" id="openFull">
-          <div class="hero__menu"></div></a>
+        </div>
+        <button class="hamburger" type="button" id="openFull">
+          <div class="hero__menu"></div>
+        </button>
         <div class="hero__title">
           <svg class="section__title-desc">
             <use xlink:href="./assets/images/sprite.svg#portfolio_header"></use>
@@ -166,9 +168,9 @@
           </div>
         </div>
       </section>
-      <footer class="footer footer__works">
+      <footer class="footer footer--works">
         <div class="footer__row">
-          <div class="footer__col footer__col-left">
+          <div class="footer__col footer__col--left">
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
@@ -178,17 +180,17 @@
               </ul>
             </nav>
           </div>
-          <div class="footer__col footer__col-right">
+          <div class="footer__col footer__col--right">
             <ul class="socials__list">
-              <li class="socials__item--black"><a class="socials__link" href="https://www.vk.com/">
+              <li class="socials__item socials__item--black"><a class="socials__link" href="https://www.vk.com/">
                   <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#vk_round"></use>
                   </svg></a></li>
-              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
+              <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
                   <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#github_round"></use>
                   </svg></a></li>
-              <li class="socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
+              <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
                   <svg class="socials__icon--black">
                     <use xlink:href="assets/images/sprite.svg#in_round"></use>
                   </svg></a></li>
@@ -196,12 +198,12 @@
           </div>
         </div>
         <div class="footer__row">
-          <div class="footer__col footer__col-left">
+          <div class="footer__col footer__col--left">
             <div class="footer__text">
               <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.      </p>
             </div>
           </div>
-          <div class="footer__col footer__col-right">
+          <div class="footer__col footer__col--right">
             <div class="start__copy--f">Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
           </div>
         </div>

@@ -81,10 +81,29 @@
     height: 392px;
     width: 380px;
     display: flex;
-    background-color: rgba(218,219,214,.6);
     flex-direction: column;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: url('../images/bg-rev.jpg');
+        background-size: cover;
+        z-index: -1;
+        margin: -30px;
+        filter: blur(10px);
+        height: 442px;
+        background-position: center -50%;
+        background-repeat: no-repeat;
+    }
 }
 
 .block-title-form {

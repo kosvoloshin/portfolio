@@ -1,4 +1,4 @@
-.footer__map {
+.footer--map {
     width: 100%;
     height: 147px;
     background: rgba($color: #373e42, $alpha: 0.7);
@@ -7,7 +7,7 @@
     position: absolute;
     top: calc(300% - 147px);    
 }
-.footer__works {
+.footer--works {
     width: 100%;
     height: 147px;
     background: rgba($color: #373e42, $alpha: 0.7);
@@ -17,7 +17,7 @@
     top: calc(400% - 88px);
 }
 
-.footer__blog {
+.footer--blog {
     width: 100%;
     height: 147px;
     background: rgba($color: #373e42, $alpha: 0.7);
@@ -37,7 +37,7 @@
     }
 }
 
-.footer__col.footer__col-left {
+.footer__col.footer__col--left {
     width: 50%;
 }
 
@@ -92,7 +92,7 @@
     }
 }
 
-.footer__col.footer__col-right {
+.footer__col.footer__col--right {
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -107,7 +107,7 @@
     margin-left: 30px;
 }
 
-.start__copy-f {
+.start__copy--f {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 300;
