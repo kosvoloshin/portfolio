@@ -9,6 +9,10 @@
     display: none;
 }
 
+.full-m.active {
+    display: flex;
+}
+
 .full-m__close {
     display: flex;
     justify-content: flex-end;

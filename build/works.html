@@ -9,11 +9,22 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
-    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
+    <!--script(defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&callback=initMap")-->
   </head>
   <body>
     <div class="wrapper">
       <h1 class="visuallyhidden">Мои работы</h1>
+      <div class="full-m" id="fullMenu">
+        <div class="full-m__close"><a class="full-m__close-btn" id="closeFull" href="#"><img class="full-m__close-pic" src="./assets/images/close.png"></a></div>
+        <nav class="full-m__nav">
+          <ul class="full-m__nav-list">
+            <li class="full-m__nav-item"><a class="full-m__nav-link" href="works.html">Мои работы</a></li>
+            <li class="full-m__nav-item"><a class="full-m__nav-link" href="blog.html">Блог</a></li>
+            <li class="full-m__nav-item"><a class="full-m__nav-link" href="about.html">Обо мне</a></li>
+            <li class="full-m__nav-item"><a class="full-m__nav-link" href="index.html">Авторизация</a></li>
+          </ul>
+        </nav>
+      </div>
       <section class="section hero">
         <div class="socials--hero">
           <ul class="socials__list">

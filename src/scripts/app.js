@@ -2,10 +2,8 @@
 
 slider(); // инициализируем слайдер*/
 
-const map = require('./common/google-maps');
+require('./common/google-maps');
 
-map();
+const menuInit = require('./common/menu');
 
-const menu = require('./common/menu');
-
-menu();
+menuInit.init();
