@@ -5,22 +5,12 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     display: none;
 }
 
 .full-m.active {
     display: flex;
-}
-
-.full-m__close {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.full-m__close-btn {
-    height: 100%;
-    margin: 30px;
 }
 
 .full-m__nav {
@@ -33,6 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10%;
 }
 
 .full-m__nav-item {
