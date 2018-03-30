@@ -7,3 +7,9 @@ require('./common/google-maps');
 const menuInit = require('./common/menu');
 
 menuInit.init();
+
+const flipInit = require('./common/flip');
+
+flipInit.init();
+
+require('./common/parallax');

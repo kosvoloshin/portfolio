@@ -1,8 +1,4 @@
 .start {
-    background-image: url(../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
     height: 100%;
     position: relative;
     display: flex;
@@ -32,6 +28,15 @@
     }
 }
 
+.flip {
+    -webkit-perspective: 1200;
+    perspective: 1200;
+    -moz-transform: perspective(1200px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d; 
+    transform-style: preserve-3d;
+}
+
 .start__page {
     height: 350px;
     width: 380px;
@@ -40,6 +45,20 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s linear;
+    -moz-transition: .7s linear;
+    -o-transition: .7s linear;
+    transition: .7s linear;
+}
+
+.start__page.active {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .start__page-info {
@@ -48,7 +67,18 @@
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    //display: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
 
 .start__page-photo {
@@ -167,12 +197,22 @@
 // форма авторизации
 
 .login {
-    display: none;
     background-color: rgba($color: #fff, $alpha: 0.8);
     width: 100%;
     height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 
 .login__title {
@@ -182,7 +222,8 @@
     color: #455a64;
     text-align: center;
     margin: 0 auto;
-    //padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 
     &:before {
         content: '';
@@ -348,7 +389,6 @@
     min-height: 45px;
     position: absolute;
     top: 100%;
-    display: none;
 }
 
 .login__form-list {
