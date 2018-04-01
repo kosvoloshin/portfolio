@@ -7,6 +7,10 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        background-image: url('../images/bg-rev-tablets.jpg');
+    }
 }
 
 .reviews__content {
@@ -14,6 +18,11 @@
     flex-direction: row;
     height: 30%;
     justify-content: center;
+
+    @include tablets {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .reviews__info {

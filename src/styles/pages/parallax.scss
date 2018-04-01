@@ -5,6 +5,10 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    @include tablets {
+      display: none;
+    }
 }
   
   .parallax__layer {
@@ -15,7 +19,11 @@
     left: 0;
     will-change: transform;
 }
-  
+
+.parallax__layer:first-child .parallax__image {
+  top: 0;
+}  
+
   .parallax__image {
     position: absolute;
     bottom: 0;

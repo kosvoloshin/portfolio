@@ -10,6 +10,12 @@
     align-items: center;
     flex-direction: column;
     background-attachment: fixed;
+
+    @include tablets {
+        background-image: url(../images/bg-tablets-pages.jpg);
+        min-height: 70%;
+        height: 70%;
+    }
 }
 
 .blog {

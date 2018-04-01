@@ -2,6 +2,10 @@
     position: relative;
     background-color: #faf8f0;
     height: 185px;
+
+    @include tablets {
+        height: 30%;
+    }
 }
 
 .triangle-w {

@@ -1,6 +1,11 @@
 .about {
     display: flex;
     position: relative;
+    
+    @include tablets {
+        min-height: 100vh;
+        flex-direction: column;
+    }
 }
 
 .triangle {
@@ -17,12 +22,13 @@
     background-image: url('../images/about_bg_left.svg');
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-
-.about__left {
     width: 50%;
     background-color: #efeee9;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+    }
 }
 
 .about__left-title {
@@ -34,6 +40,10 @@
     fill: #e6e5e0;
     position: absolute;
     bottom: 85%;
+
+    @include tablets {
+        bottom: 93%;
+    }
 }
 
 .block-title {
@@ -80,6 +90,17 @@
 
 .user__desc-pic {
     width: 65%;
+
+    @include tablets {
+        width: 95%;
+    }
+}
+
+.user__desc-title {
+
+    @include tablets {
+        margin-top: 25px;
+    }
 }
 
 .block-subtitle {
@@ -112,16 +133,28 @@
 
 .user__desk-text {
     width: 70%;
+
+    @include tablets {
+        width: 65%;
+    }
 }
 
 .text-content {
     font-family: 'Roboto';
     font-size: 16px;
     color: #455a64;
+
+    @include tablets {
+        padding-bottom: 40px;
+    }
 }
 
 .triangle__right {
     fill: #eeebdf;
+
+    @include tablets {
+        fill: #efeee9;
+    }
 }
 
 .about__right {
@@ -130,6 +163,12 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @include tablets {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .about__right-title {
@@ -146,10 +185,18 @@
 
 .about__right-text {
     width: 90%;
+
+    @include tablets {
+        width: 65%;
+    }
 }
 
 .about__right-content {
     width: 95%;
+
+    @include tablets {
+        display: flex;
+    }
 }
 
 .skills-list {
@@ -157,6 +204,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .skills-list__title {
@@ -165,6 +216,11 @@
     font-weight: 500;
     color: #373e42;
     padding-left: 10px;
+
+    @include tablets {
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .skills-row {

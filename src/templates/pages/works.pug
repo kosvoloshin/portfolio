@@ -15,25 +15,26 @@ block content
                 .p-works__title-b
                     h2.block-title-b Мои работы 
         section.section.works
-            .works-left
-                .works-left__title
+            .works-info
+                .works-info__title
                     .block-title__w Сайт школы онлайн
                     .block-title__w1 образования
-                .works-left__tech HTML, CSS, JAVASCRIPT
-                button.works-left__btn(type="button")
-                    svg.works-left__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
-                    span.works-left__btn-text Посмотреть сайт
-            .works-right
-                .works-right__slider
-                    .works-right__slider-item1: img.works-right__slider-pic1(src="./assets/images/item1.png")
-                    .works-right__slider-item2
-                        .works-right__slider-pic2
-                            button.slider-down(type="button")
-                                svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
-                    .works-right__slider-item3
-                        .works-right__slider-pic3
-                            button.slider-down(type="button")
-                                svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                .works-info__tech HTML, CSS, JAVASCRIPT
+                button.works-info__btn(type="button")
+                    svg.works-info__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                    span.works-info__btn-text Посмотреть сайт
+            .works-display
+                .works-display__slider
+                    .works-display__slider-item: img.works-display__slider-pic(src="./assets/images/item1.png")
+            .works-btns
+                .works-btns__item
+                    .works-btns__pic
+                        button.slider-down(type="button")
+                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                .works-btns__item
+                    .works-btns__pic
+                        button.slider-down(type="button")
+                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
         section.a-works
             .a-works__title
                 svg.a-works__title-desk: use(xlink:href="assets/images/sprite.svg#about_header")
@@ -77,4 +78,4 @@ block content
                         button.form-btns__submit(type="submit") Отправить
                     .form-btns__item
                         button.form-btns__delete(type="reset") Очистить
-        include ../common/footer-works.pug 
+            include ../common/footer-works.pug 

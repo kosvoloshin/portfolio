@@ -5,7 +5,11 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(300% - 147px);    
+    bottom: 0;
+    
+    @include tablets {
+        height: initial;
+    }
 }
 .footer--works {
     width: 100%;
@@ -14,7 +18,11 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(400% - 88px);
+    bottom: 0;
+
+    @include tablets {
+        height: initial;
+    }
 }
 
 .footer--blog {
@@ -24,6 +32,10 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+
+    @include tablets {
+        height: initial;
+    }
 }
 
 .footer__row {
@@ -35,21 +47,38 @@
     &:last-child {
         border-bottom: none;
     }
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__col.footer__col--left {
     width: 50%;
+
+    @include tablets {
+        width: 90%;
+    }
 }
 
 .menu {
     height: 100%;
     padding-left: 10px;
+
+    @include tablets {
+        padding: 20px 0 20px 0;
+    }
 }
 
 .menu__list {
     height: 100%;
     display: flex;
     align-items: center;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .menu__item {
@@ -71,6 +100,11 @@
     display: flex;
     align-items: center;
     padding-right: 20px;
+
+    @include tablets {
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
 }
 
 .socials__item--black {
@@ -97,6 +131,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include tablets {
+        justify-content: center;
+        width: initial;
+    }
 }
 
 .footer__text {
@@ -105,6 +144,11 @@
     font-weight: 300;
     color: rgba($color: #fff, $alpha: 0.4);
     margin-left: 30px;
+
+    @include tablets {
+        margin-left: 0;
+        text-align: center;
+    }
 }
 
 .start__copy--f {
@@ -113,4 +157,8 @@
     font-weight: 300;
     color: rgba($color: #fff, $alpha: 0.4);
     margin-right: 30px;
+    
+    @include tablets {
+        margin-right: 0;
+    }
 }

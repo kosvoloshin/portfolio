@@ -4,6 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablets {
+        background-image: url('../images/bg-tablets.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 .login__btn-link {
@@ -18,7 +25,7 @@
     line-height: 1.42;
     position: absolute;
     top: 25px;
-    right: 100px;
+    right: 25px;
     cursor: pointer;
     transition: .3s;
 
@@ -130,11 +137,11 @@
     width: 25px;
     display: inline-block;
     vertical-align: middle;
-    fill: rgba($color: #009688, $alpha: 0.8);
+    fill: rgba($color: #009688, $alpha: 0.6);
     transition: .3s;
 
     &:hover {
-        fill: rgba($color: #04796e, $alpha: 0.8);
+        fill: rgba($color: #04796e, $alpha: 0.9);
     }
 }
 
