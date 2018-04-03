@@ -3,6 +3,10 @@
     background-color: #fff;
     height: 205px;
     width: 100%;
+
+    @include phones {
+        height: auto;        
+    }
 }
 
 .a-works__title {
@@ -14,20 +18,13 @@
     height: 170px;
     fill: #f0eee7;
     margin-top: 15px;
+
+    @include phones {
+        width: 90%;
+        height: initial;
+        margin: 0;        
+    }
 }
-/*
-.a-works__title-b {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    font-family: 'BERNIER';
-    font-size: 63px;
-    color: #455a64;
-    text-align: center;
-    line-height: 1;
-}*/
 
 .block-title-a {
     position: absolute;
@@ -62,5 +59,12 @@
         position: absolute;
         right: 0;
         top: 40px;
+    }
+
+    @include phones {
+        font-size: 35px;
+        width: 248px; 
+        margin: 0;
+        top: 40%;       
     }
 }

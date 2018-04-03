@@ -11,6 +11,13 @@
         background-position: center center;
         background-repeat: no-repeat;
     }
+
+    @include phones {
+        background-image: url('../images/bg-phones.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
 }
 
 .login__btn-link {
@@ -32,6 +39,12 @@
     &:hover {
         background-color: #fff;
         color: #00bfa5;
+    }
+
+    @include phones {
+        right: 50%;
+        transform: translateX(50%);
+        font-size: 14px;
     }
 }
 
@@ -59,6 +72,10 @@
     -moz-transition: .7s linear;
     -o-transition: .7s linear;
     transition: .7s linear;
+
+    @include phones {
+        width: 300px;
+    }
 }
 
 .start__page.active {
@@ -102,6 +119,10 @@
     font-family: 'Roboto';
     font-weight: 500;
     color: #455a64;
+
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .start__page-desk {
@@ -111,6 +132,10 @@
     font-weight: normal;
     color: #455a64;
     margin-top: 10px;
+
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .socials {
@@ -189,6 +214,11 @@
     font-weight: 500;
     line-height: 1.42;
     padding: 12px 29px;
+
+    @include phones {
+        font-size: 14px;
+        padding: 12px 21px;
+    }
 }
 
 
@@ -199,6 +229,12 @@
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 300;
+
+    @include phones {
+        width: 80%;
+        text-align: center;
+        bottom: 10px;
+    }
 }
 
 // форма авторизации

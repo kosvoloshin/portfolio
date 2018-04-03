@@ -16,11 +16,20 @@
         min-height: 70%;
         height: 70%;
     }
+
+    @include phones {
+        background-image: url(../images/bg-phones-pages.jpg);
+        height: 98%;
+    }
 }
 
 .blog {
     min-height: inherit;
     height: 400px;
+
+    @include phones {
+        height: 98%;
+    }
 }
 
 .socials--hero {
@@ -119,6 +128,10 @@
 .hero__title {
     width: 100%;
     height: 35%;
+
+    @include phones {
+        display: none;
+    }
 }
 
 .section__title-desc {
@@ -166,6 +179,10 @@
     font-weight: 500;
     font-size: 35px;
     color: #fff;
+
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 // заголовок в блоге
@@ -193,13 +210,21 @@
         display: inline-block;
         vertical-align: middle;
         margin-left: 35px;
-    }    
+    }
+    
+    @include phones {
+        font-size: 35px;
+    }
 }
 
 .user__desc {
     font-family: 'Roboto';
     font-size: 16px;    
     color: #b9d1d7;
+
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 // для блога
@@ -207,6 +232,10 @@
     font-family: 'Roboto';
     font-size: 16px;    
     color: #fff;
+
+    @include phones {
+        font-size: 14px;
+    } 
 }
 
 .hero__down{
@@ -231,7 +260,7 @@
 }
 
 .down-arrow {
-    height: 100%;
+    height: 85%;
     width: 100%;
     fill: rgba($color: #fff, $alpha: 0.7);
     z-index: 2;

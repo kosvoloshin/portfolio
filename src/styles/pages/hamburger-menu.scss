@@ -25,6 +25,10 @@
     align-items: center;
     padding-top: 10%;
     position: relative;
+
+    @include phones {
+        padding-top: 35%;
+    }
 }
 
 .full-m__nav-item {

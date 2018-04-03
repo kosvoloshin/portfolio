@@ -8,7 +8,7 @@ block content
         h1.visuallyhidden Мои работы
         include ../common/hamburger-menu.pug 
         include ../common/section-hero.pug
-        section.p-works
+        section.p-works#section2
             include ../common/triangle.pug
             .p-works__title
                 svg.p-works__title-desk: use(xlink:href="assets/images/sprite.svg#works_header")
@@ -60,7 +60,7 @@ block content
                         .reviews__user-info
                             .reviews__user-info-name Сабанцев Владимир
                             .reviews__user-info-pos преподаватель
-            .reviews__form.form
+            form.reviews__form.form
                 .form-desk
                     .form-desk__title
                         h3.block-title-form Связаться со мной
@@ -75,7 +75,9 @@ block content
                         textarea.form-desk__mes-b(name="message" placeholder="Ваше сообщение")
                 .form-btns
                     .form-btns__item
-                        button.form-btns__submit(type="submit") Отправить
+                        button.form-btns__submit(type="submit" value="submit") Отправить
                     .form-btns__item
-                        button.form-btns__delete(type="reset") Очистить
+                        button.form-btns__delete(type="reset" value="reset") Очистить
+            a.works__up#next(href="#section1")
+                svg.up-arrow: use(xlink:href="assets/images/sprite.svg#arrow_down")
             include ../common/footer-works.pug 

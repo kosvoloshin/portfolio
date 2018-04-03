@@ -3,6 +3,10 @@
     padding-top: 70px;
     display: flex;
     flex-direction: row;
+
+    @include tablets {
+        padding-top: 10px;
+    }
 }
 
 .blog-nav__list {
@@ -55,6 +59,10 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    @include phones {
+        width: 93%;
+    }
 }
 
 .main-blog__items {
@@ -65,6 +73,15 @@
     padding-bottom: 50px;
     margin-bottom: 60px;
     border-bottom: 5px solid rgba(55,62,66,.07);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    @include phones {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
 }
 
 .main-blog__title {
@@ -75,6 +92,9 @@
     margin: 0;
     margin-bottom: 10px;
 
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .main-blog__date {
@@ -85,6 +105,10 @@
     line-height: 1.42;
     font-weight: 400;
     margin-bottom: 20px;
+
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .main-blog__content {
@@ -93,4 +117,8 @@
     color: #373e42;
     text-decoration: none;
     line-height: 1.42;
+
+    @include phones {
+        font-size: 14px;
+    }
 }

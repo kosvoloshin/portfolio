@@ -28,6 +28,11 @@
     @include tablets {
         top: 10%;
     }
+
+    @include phones {
+        width: 100%;
+        top: 0;
+    }
 }
 
 .contacts {
@@ -68,11 +73,19 @@
         vertical-align: middle;
         margin-left: 20px;
     }
+
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .contacts__desk {
     width: 80%;
     padding-top: 30px;
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .contacts__item {
@@ -97,4 +110,8 @@
     font-family: 'Rodoto';
     font-weight: 500;
     color: #657981;
+
+    @include phones {
+        font-size: 14px;
+    }
 }

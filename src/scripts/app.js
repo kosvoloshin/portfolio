@@ -13,3 +13,5 @@ const flipInit = require('./common/flip');
 flipInit.init();
 
 require('./common/parallax');
+
+require('./common/scroll-anchor');

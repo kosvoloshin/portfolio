@@ -8,7 +8,7 @@ block content
         h1.visuallyhidden Обо мне
         include ../common/hamburger-menu.pug
         include ../common/section-hero.pug
-        section.section.about
+        section.section.about#section2
             svg.triangle(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
                 polygon.triangle__left(points="0,0   0,86   500.8,86   500.8,75.5")
             .about__left
@@ -92,7 +92,7 @@ block content
                                         circle.circle__first(r="40" cx="55" cy="55" fill="none")
                                         circle.circle__second.circle-15(r="40" cx="55" cy="55" transform="rotate(-90 55 55)")
                                     .skills__title Bower
-        section.section.map
+        section.section.map#section3
             script(defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&callback=initMap")
             .google-map#map
             .map__contacts

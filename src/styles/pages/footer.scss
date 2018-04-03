@@ -10,6 +10,11 @@
     @include tablets {
         height: initial;
     }
+
+    @include phones {
+        //justify-content: center;
+        //align-items: center;
+    }
 }
 .footer--works {
     width: 100%;
@@ -52,6 +57,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    @include phones {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 .footer__col.footer__col--left {
@@ -59,6 +69,10 @@
 
     @include tablets {
         width: 90%;
+    }
+
+    @include phones {
+        width: 100%;
     }
 }
 
@@ -79,11 +93,19 @@
     @include tablets {
         justify-content: center;
     }
+
+    @include phones {
+        justify-content: space-around;
+    }
 }
 
 .menu__item {
     display: inline-block;
     padding: 0 20px;
+
+    @include phones {
+        padding: 0;
+    }
 }
 
 .menu__link {
@@ -93,6 +115,10 @@
 
     &:hover {
         color: #00bfa5;
+    }
+
+    @include phones {
+        font-size: 11px;
     }
 }
 
@@ -112,7 +138,7 @@
 }
 
 .socials__icon--black {
-    height: 36px;
+    height: 37px;
     width: 36px;
     display: inline-block;
     vertical-align: middle;
@@ -136,6 +162,10 @@
         justify-content: center;
         width: initial;
     }
+
+    @include phones {
+        padding-bottom: 10px;        
+    }
 }
 
 .footer__text {
@@ -149,6 +179,10 @@
         margin-left: 0;
         text-align: center;
     }
+
+    @include phones {
+        font-size: 12px;
+    }
 }
 
 .start__copy--f {
@@ -160,5 +194,10 @@
     
     @include tablets {
         margin-right: 0;
+    }
+
+    @include phones {
+        font-size: 12px;
+        text-align: center;
     }
 }

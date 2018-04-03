@@ -23,7 +23,7 @@
           </ul>
         </nav>
       </div>
-      <section class="section hero">
+      <section class="section hero" id="section1">
         <div class="socials--hero">
           <ul class="socials__list">
             <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
@@ -52,14 +52,12 @@
           <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
           <div class="user__name">Владимир Астахов</div>
           <div class="user__desc">Личный сайт разработчика</div>
-        </div>
-        <button class="hero__down" type="button">
+        </div><a class="hero__down" id="next" href="#section2">
           <svg class="down-arrow">
             <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
-          </svg>
-        </button>
+          </svg></a>
       </section>
-      <section class="p-works">
+      <section class="p-works" id="section2">
         <svg class="triangle-w" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
           <polygon class="triangle__left-w" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
           <polygon class="triangle__right-w" points="1000,0   1000,86   500,86   500,75.5"></polygon>
@@ -151,7 +149,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews__form form">
+        <form class="reviews__form form">
           <div class="form-desk">
             <div class="form-desk__title">
               <h3 class="block-title-form">Связаться со мной</h3>
@@ -171,13 +169,16 @@
           </div>
           <div class="form-btns">
             <div class="form-btns__item">
-              <button class="form-btns__submit" type="submit">Отправить</button>
+              <button class="form-btns__submit" type="submit" value="submit">Отправить</button>
             </div>
             <div class="form-btns__item">
-              <button class="form-btns__delete" type="reset">Очистить</button>
+              <button class="form-btns__delete" type="reset" value="reset">Очистить</button>
             </div>
           </div>
-        </div>
+        </form><a class="works__up" id="next" href="#section1">
+          <svg class="up-arrow">
+            <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
+          </svg></a>
         <footer class="footer footer--works">
           <div class="footer__row">
             <div class="footer__col footer__col--left">

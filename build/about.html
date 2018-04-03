@@ -23,7 +23,7 @@
           </ul>
         </nav>
       </div>
-      <section class="section hero">
+      <section class="section hero" id="section1">
         <div class="socials--hero">
           <ul class="socials__list">
             <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
@@ -52,14 +52,12 @@
           <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
           <div class="user__name">Владимир Астахов</div>
           <div class="user__desc">Личный сайт разработчика</div>
-        </div>
-        <button class="hero__down" type="button">
+        </div><a class="hero__down" id="next" href="#section2">
           <svg class="down-arrow">
             <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
-          </svg>
-        </button>
+          </svg></a>
       </section>
-      <section class="section about">
+      <section class="section about" id="section2">
         <svg class="triangle" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
           <polygon class="triangle__left" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
         </svg>
@@ -183,7 +181,7 @@
           </div>
         </div>
       </section>
-      <section class="section map">
+      <section class="section map" id="section3">
         <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
         <div class="google-map" id="map"></div>
         <div class="map__contacts">
