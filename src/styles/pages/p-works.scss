@@ -2,6 +2,14 @@
     position: relative;
     background-color: #faf8f0;
     height: 185px;
+
+    @include tablets {
+        height: 30%;
+    }
+
+    @include phones {
+        height: 15%;
+    }
 }
 
 .triangle-w {
@@ -18,13 +26,18 @@
     width: 500px;
     height: 170px;
     fill: #f0eee7;
+
+    @include phones {
+        width: 100%;
+        height: 83px;
+    }
 }
 
-.p-works__title-b {
+.block-title-b {
     position: absolute;
-    top: 45%;
+    top: 25%;
     left: 50%;
-    width: 380px;
+    width: 100%;
     transform: translate(-50%, -50%);
     font-family: 'BERNIER';
     font-size: 63px;
@@ -41,6 +54,11 @@
         position: absolute;
         left: 0px;
         top: 40px;
+
+        @include phones {
+            top: 50%;
+            left: 10%;
+        }
     }
 
     &:after {
@@ -53,5 +71,16 @@
         position: absolute;
         right: 0;
         bottom: 40px;
+
+        @include phones {
+            top: 50%;
+            right: 10%;
+        }
+    }
+
+    @include phones {
+        font-size: 35px;
+        top: 50%;
+        margin: 0;
     }
 }

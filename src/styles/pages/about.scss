@@ -1,6 +1,11 @@
 .about {
     display: flex;
     position: relative;
+    
+    @include tablets {
+        min-height: 100vh;
+        flex-direction: column;
+    }
 }
 
 .triangle {
@@ -17,12 +22,13 @@
     background-image: url('../images/about_bg_left.svg');
     background-size: cover;
     background-repeat: no-repeat;
-
-}
-
-.about__left {
     width: 50%;
     background-color: #efeee9;
+
+    @include tablets {
+        width: 100%;
+        flex: 1;
+    }
 }
 
 .about__left-title {
@@ -34,13 +40,25 @@
     fill: #e6e5e0;
     position: absolute;
     bottom: 85%;
+
+    @include tablets {
+        bottom: 93%;
+    }
+
+    @include phones {
+        width: 50%;
+        height: 9%;
+        bottom: 94%;
+    }
 }
 
 .block-title {
     position: absolute;
     font-family: 'BERNIER';
     font-size: 63px;
+    font-weight: normal;
     color: #373e42;
+    margin: 0 auto;
 
     &:before {
         content: '';
@@ -51,6 +69,10 @@
         display: inline-block;
         left: -42px;
         top: 41px;
+
+        @include phones {
+            top: 23px;
+        }
     }
 
     &:after {
@@ -62,6 +84,15 @@
         display: inline-block;
         right: -38px;
         top: 41px;
+
+        @include phones {
+            top: 23px;
+        }
+    }
+
+    @include phones {
+        font-size: 35px;
+        top: 0;
     }
 }
 
@@ -78,12 +109,25 @@
 
 .user__desc-pic {
     width: 65%;
+
+    @include tablets {
+        width: 95%;
+    }
+}
+
+.user__desc-title {
+
+    @include tablets {
+        margin-top: 25px;
+    }
 }
 
 .block-subtitle {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
+    margin: 0 auto;
+    font-weight: normal;
 
     &:before {
         content: '';
@@ -104,20 +148,46 @@
         vertical-align: middle;
         margin-left: 35px;
     }
+
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .user__desk-text {
     width: 70%;
+
+    @include tablets {
+        width: 65%;
+    }
+
+    @include phones {
+        font-size: 14px;
+        width: 90%;
+    }
 }
 
 .text-content {
     font-family: 'Roboto';
     font-size: 16px;
     color: #455a64;
+
+    @include tablets {
+        padding-bottom: 40px;
+    }
+
+    @include phones {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
 }
 
 .triangle__right {
     fill: #eeebdf;
+
+    @include tablets {
+        fill: #efeee9;
+    }
 }
 
 .about__right {
@@ -126,50 +196,48 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @include tablets {
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .about__right-title {
     text-align: center;
 }
 
-.block-subtitle {
-    font-family: 'BERNIER';
-    font-size: 35px;
-    color: #455a64;
-
-    &:before {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 22px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 35px;
-    }
-
-    &:after {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 22px;
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 35px;
-    }
-}
-
 .block-subtitle-l {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
+    margin: 0 auto;
+    font-weight: normal;
+
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .about__right-text {
     width: 90%;
+
+    @include tablets {
+        width: 65%;
+    }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .about__right-content {
     width: 95%;
+
+    @include tablets {
+        display: flex;
+    }
 }
 
 .skills-list {
@@ -177,19 +245,38 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+        align-items: center;
+    }
 }
 
-.skills-list-title {
+.skills-list__title {
     font-family: 'Roboto';
     font-size: 28px;
     font-weight: 500;
     color: #373e42;
     padding-left: 10px;
+
+    @include tablets {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    @include tablets {
+        font-size: 21px;
+    }
 }
 
 .skills-row {
     width: 100%;
     height: 100%;
+
+    @include phones {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }    
 }
 
 .skills {
@@ -197,7 +284,6 @@
     height: 110px;
     width: 110px;
     position: relative;
-    margin: 0 10px;
 }
 
 .skills-circles {
@@ -225,6 +311,10 @@
     font-weight: 500;
     color: #1bb696;
     font-size: 13px;
+
+    @include phones {
+        font-size: 11px;
+    }
 }  
   
 .skills-circles .circle-0 {

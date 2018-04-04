@@ -1,21 +1,47 @@
 .works {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+
+    @include tablets {
+        height: 1015px;
+        flex-wrap: nowrap;
+    }
+
+    @include phones {
+        height: 100%;        
+    }
 }
 
-.works-left {
+.works-info {
     width: 50%;
     background-color: #f0efe9;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
+
+    @include tablets {
+        width: 100%;
+        height: 65%;
+    }
+
+    @include phones {
+        height: 30%;
+    }
 }
 
-.works-left__title {
+.works-info__title {
     margin-bottom: 40px;
+
+    @include phones {
+        margin: 0;       
+    }
 }
 
-.block-title-w {
+.block-title__w {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
@@ -39,16 +65,24 @@
         vertical-align: middle;
         margin-left: 35px;
     }
+
+    @include phones {
+        font-size: 21px;        
+    }
 }
 
-.block-title-w1 {
+.block-title__w1 {
     font-family: 'BERNIER';
     font-size: 35px;
     color: #455a64;
     text-align: center;
+
+    @include phones {
+        font-size: 21px;        
+    }
 }
 
-.works-left__tech {
+.works-info__tech {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: 500;
@@ -61,9 +95,17 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+
+    @include phones {
+        font-size: 14px;
+        width: 100%;
+        height: 32px;
+        margin-bottom: 0;
+        margin: 10px 0;        
+    }
 }
 
-.works-left__btn {
+.works-info__btn {
     padding: 13px 18px;
     background-color: #00bfa5;
     border: initial;
@@ -81,83 +123,110 @@
         background-color: #fff;
         color: #00bfa5;
     }
+
+    @include phones {
+        font-size: 14px;        
+    }
 }
 
-.works-left__btn:hover .works-left__btn_icon {
+.works-info__btn:hover .works-left__btn-icon {
     fill: #00bfa5;
 }
 
-.works-left__btn_icon {
+.works-info__btn-icon {
     height: 19px;
     width: 21px;
     fill: #fff;
     margin-right: 10px;
 }
 
-.works-right {
+.works-display {
     width: 50%;
     background-color: #efebe0;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+        width: 100%;
+        order: -10;
+        height: 80%;
+    }
+
+    @include phones {
+        height: 50%;        
+    }
 }
 
-.works-right__slider {
+.works-display__slider {
     height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.works-right__slider-pic1 {
+.works-display__slider-pic {
     width: 70%;
     display: flex;
     margin: 0 auto;
     margin-top: 15%;
 }
 
-.works-right__slider-item1 {
+.works-display__slider-item {
     height: 70%;
     width: 100%;
 }
 
-.works-right__slider-item2 {
+.works-btns {
+    width: 50%;
     height: 30%;
+    display: flex;
+
+    @include tablets {
+        width: 100%;
+        height: 60%;
+    }
+
+    @include phones {
+        height: 20%;        
+    }
+}
+
+.works-btns__item {
+    height: 100%;
     width: 50%;
     background-image: url(../images/item2.png);
     background-size: cover;
     background-position: center center;
 }
 
-.works-right__slider-pic2 {
-    background-color: rgba(0, 0, 0, 0.3);
+.works-btns__pic {
+    background-color: rgba(188, 188, 188, 0.5);
     display: flex;
     justify-content: center;
     height: 100%;
+    position: relative;
 }
 
-.hero__down--works {
+.slider-down {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    bottom: 50%;
     background: none;
     border: initial;
     cursor: pointer;
+    z-index: 10;
+
+    &:hover .slider-down__works {
+        fill: rgba($color: #fff, $alpha: 1.0);
+    }
 }
 
-.down-arrow--works {
-    height: 27px;
-    width: 43px;
-    fill: #fff;
-}
-
-
-.works-right__slider-item3 {
-    height: 30%;
-    width: 50%;
-    background-image: url(../images/item3.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-.works-right__slider-pic3 {
+.slider-down__works {
     height: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    fill: rgba($color: #fff, $alpha: 0.7);
+    z-index: 10;
+    transition: .3s;
 }
-

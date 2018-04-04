@@ -5,54 +5,58 @@ block variables
 
 block content
     .wrapper
+        include ../common/parallax.pug
         h1.visuallyhidden Главная
         .start
-            .start__login-btn: a.login__btn-link(href="#") Авторизоваться
-            .start__page
-                .start__page-info
-                    .start__page-photo(style="background-image: url('./assets/images/photo.png')")
-                    .start__page-name Владимир Астахов
-                    .start__page-desk Личный сайт веб разработчика
-                    .start__page_soc
-                        ul.start__page_soc-items
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#vk")
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#github")
-                            li.start__page_soc-item: a.start__page_soc-link(href="https://www.vk.com/")
-                                svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#in")
-                .start__page_menu: ul.start__page_menu-items
-                    li.start__page_menu-item: a.start__page_menu-link(href="works.html") Мои работы
-                    li.start__page_menu-item: a.start__page_menu-link(href="about.html") Обо мне
-                    li.start__page_menu-item: a.start__page_menu-link(href="blog.html") Блог
-                .start__page_log
-                    h1.start__page_log-title Авторизуйтесь
-                    .start__page_log-form
-                        .start__page_log-icon
-                            svg.start__page_log-pic: use(xlink:href="assets/images/sprite.svg#login")
-                        label.visuallyhidden Логин
-                        input(type="text" name="login" placeholder="Логин").start__page_log-in
-                    .start__page_log-form
-                        .start__page_log-icon
-                            svg.start__page_log-pic: use(xlink:href="assets/images/sprite.svg#password")
-                            label.visuallyhidden Пароль
-                        input(type="text" name="password" placeholder="Пароль").start__page_log-in
-                    .start__page_log-human
-                        label.start__page_log-block
-                            input(type="checkbox" name="human").start__page_log-check.visuallyhidden
-                            .start__page_log-fake
-                            .start__page_log-text Я человек
-                    .start__page_log-desk Вы точно не робот?
-                    .start__page_log-row
-                        label.start__page_log-y
-                            input(type="radio").start__page_log-r
-                            .start__page_log-yes Да
-                        label.start__page_log-n
-                            input(type="radio").start__page_log-r
-                            .start__page_log-no Нет
-                .start__page_log-menu: ul.start__page_log-items
-                    li.start__page_log-item: a.start__page_log-link(href="index.html") На главную
-                    li.start__page_log-item: a.start__page_log-link(href="#") Войти
+            .start__login-btn: a.login__btn-link#login(href="#") Авторизоваться
+            .flip
+                .start__page
+                    .start__page-info
+                        .start__page-photo(style="background-image: url('./assets/images/photo.png')")
+                        .start__page-name Владимир Астахов
+                        .start__page-desk Личный сайт веб разработчика
+                        .socials
+                            ul.socials__list
+                                li.socials__item: a.socials__link(href="https://www.vk.com/")
+                                    svg.socials__icon: use(xlink:href="assets/images/sprite.svg#vk")
+                                li.socials__item: a.socials__link(href="https://www.github.com/")
+                                    svg.socials__icon: use(xlink:href="assets/images/sprite.svg#github")
+                                li.socials__item: a.socials__link(href="https://www.linkedin.com/")
+                                    svg.socials__icon: use(xlink:href="assets/images/sprite.svg#in")
+                        .nav-menu: ul.nav-menu__list
+                            li.nav-menu__item: a.nav-menu__link(href="works.html") Мои работы
+                            li.nav-menu__item: a.nav-menu__link(href="about.html") Обо мне
+                            li.nav-menu__item: a.nav-menu__link(href="blog.html") Блог
+                    .login
+                        h2.login__title Авторизуйтесь
+                        .login__form
+                            .login__form-icon
+                                svg.login__form-pic: use(xlink:href="assets/images/sprite.svg#login")
+                            label.visuallyhidden Логин
+                            input(type="text" name="login" placeholder="Логин").login__form-type
+                        .login__form
+                            .login__form-icon
+                                svg.login__form-pic: use(xlink:href="assets/images/sprite.svg#password")
+                                label.visuallyhidden Пароль
+                            input(type="text" name="password" placeholder="Пароль").login__form-type
+                        .login__form-human
+                            label.login__form-block
+                                input(type="checkbox" name="human").login__form-check.visuallyhidden
+                                .login__form-fake
+                                .login__form-text Я человек
+                        .login__form-desk Вы точно не робот?
+                        .login__form-row
+                            label.login__form-y
+                                input(type="radio" name="options" value="да").login__form-r.visuallyhidden
+                                .login__form-radio-fake
+                                .login__form-t Да
+                            label.login__form-n
+                                input(type="radio" name="options" value="нет").login__form-r.visuallyhidden
+                                .login__form-radio-fake
+                                .login__form-t Не уверен
+                        .login__form-menu: ul.login__form-list
+                            li.login__form-item: a.login__form-link#toMain(href="#") На главную
+                            li.login__form-item: a.login__form-link(href="#") Войти
             .start__copy Владимир Астахов | создано с любовью в LoftSchool | 2016
                                         
 

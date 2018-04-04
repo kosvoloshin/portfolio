@@ -1,7 +1,17 @@
-const slider = require('./common/slider');
+/*const slider = require('./common/slider');
 
-slider(); // инициализируем слайдер
+slider(); // инициализируем слайдер*/
 
-const map = require('./common/google-maps');
+require('./common/google-maps');
 
-map(); // инициализируем карты
+const menuInit = require('./common/menu');
+
+menuInit.init();
+
+const flipInit = require('./common/flip');
+
+flipInit.init();
+
+require('./common/parallax');
+
+require('./common/scroll-anchor');

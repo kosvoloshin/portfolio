@@ -3,12 +3,20 @@
     padding-top: 70px;
     display: flex;
     flex-direction: row;
+
+    @include tablets {
+        padding-top: 10px;
+    }
 }
 
 .blog-nav__list {
     width: 33%;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets {
+        width: 0;
+    }
 }
 
 .blog-nav__items {
@@ -18,9 +26,20 @@
 }
 
 .blog-nav__item {
-    text-align: end;
-    margin-bottom: 20px;
-    height: 42px;
+    text-align: right;
+    padding: 15px;
+    border-right: 3px solid transparent;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #00bfa5;
+    }
+    
+    &:hover .blog-nav__link {
+        color: #00bfa5;
+        font-weight: 450;
+    }
 }
 
 .blog-nav__link {
@@ -29,15 +48,21 @@
     color: #373e42;
     text-decoration: none;
     line-height: 1.42;
-
-    &:hover {
-        color: #00bfa5;
-        }
 }
 
 .main-blog {
     width: 67%;
     margin-left: 100px;
+
+    @include tablets {
+        margin-left: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    @include phones {
+        width: 93%;
+    }
 }
 
 .main-blog__items {
@@ -47,19 +72,15 @@
 .main-blog__item {
     padding-bottom: 50px;
     margin-bottom: 60px;
+    border-bottom: 5px solid rgba(55,62,66,.07);
 
-    &:after {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 95%;
-        max-width: 680px;
-        position: absolute;
-        margin-top: 50px;
+    &:last-child {
+        border-bottom: none;
     }
 
-    &:last-child:after {
-        opacity: 0;
+    @include phones {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
     }
 }
 
@@ -71,6 +92,9 @@
     margin: 0;
     margin-bottom: 10px;
 
+    @include phones {
+        font-size: 21px;
+    }
 }
 
 .main-blog__date {
@@ -81,6 +105,10 @@
     line-height: 1.42;
     font-weight: 400;
     margin-bottom: 20px;
+
+    @include phones {
+        font-size: 14px;
+    }
 }
 
 .main-blog__content {
@@ -90,16 +118,7 @@
     text-decoration: none;
     line-height: 1.42;
 
-   /* &:after {
-        content: '';
-        background: rgba($color: #373e42, $alpha: 0.5);
-        height: 5px;
-        width: 680px;
-        position: absolute;
-        margin-top: 50px;
+    @include phones {
+        font-size: 14px;
     }
-
-    &:last-child:after {
-        opacity: 0;
-    }*/
 }

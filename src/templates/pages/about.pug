@@ -6,19 +6,20 @@ block variables
 block content
     .wrapper
         h1.visuallyhidden Обо мне
+        include ../common/hamburger-menu.pug
         include ../common/section-hero.pug
-        section.section.about
+        section.section.about#section2
             svg.triangle(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none")
                 polygon.triangle__left(points="0,0   0,86   500.8,86   500.8,75.5")
             .about__left
                 .about__left-title
                     svg.about__left-desc: use(xlink:href="assets/images/sprite.svg#about_header")
-                    .block-title Обо мне
+                    h2.block-title Обо мне
                 .about__left-content
                     .user__desc-img
                         img.user__desc-pic(src=('./assets/images/photo-about.jpg'))
                     .user__desc-title
-                        .block-subtitle Кто я
+                        h3.block-subtitle Кто я
                     .user__desk-text.text-content
                         p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
                         p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
@@ -26,14 +27,14 @@ block content
                 polygon.triangle__right(points="1000,0   1000,86   500,86   500,75.5")
             .about__right
                 .about__right-title
-                    .block-subtitle Чем я могу быть 
-                    .block-subtitle-l вам полезен
+                    h3.block-subtitle Чем я могу быть 
+                    h3.block-subtitle-l вам полезен
                 .about__right-text.text-content
                     p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
                 .about__right-content
                     ul.skills-list
                         li.skills-list__item
-                            .skills-list-title Frontend
+                            .skills-list__title Frontend
                             .skills-row
                                 .skills
                                     svg.skills-circles(viewBox="0 0 110 110")
@@ -51,7 +52,7 @@ block content
                                         circle.circle__second.circle-50(r="40" cx="55" cy="55" transform="rotate(-90 55 55)")
                                     .skills__title JavaScript & jQuery
                         li.skills-list__item
-                            .skills-list-title Beckend
+                            .skills-list__title Beckend
                             .skills-row
                                 .skills
                                     svg.skills-circles(viewBox="0 0 110 110")
@@ -74,7 +75,7 @@ block content
                                         circle.circle__second.circle-15(r="40" cx="55" cy="55" transform="rotate(-90 55 55)")
                                     .skills__title Mongo db
                         li.skills-list__item
-                            .skills-list-title WorkFlow
+                            .skills-list__title WorkFlow
                             .skills-row
                                 .skills
                                     svg.skills-circles(viewBox="0 0 110 110")
@@ -91,29 +92,30 @@ block content
                                         circle.circle__first(r="40" cx="55" cy="55" fill="none")
                                         circle.circle__second.circle-15(r="40" cx="55" cy="55" transform="rotate(-90 55 55)")
                                     .skills__title Bower
-        section.section.map
+        section.section.map#section3
+            script(defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&callback=initMap")
             .google-map#map
             .map__contacts
                 .contacts
                     .contacts__title
-                        .block__subtitle--contacts Контакты
+                        h2.block__subtitle-contacts Контакты
                     .contacts__desk
-                        ul.contacts__item--c
-                            li.start__page_soc-item--c
-                                a.start__page_soc-link--c(href="https://www.vk.com/") 
-                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#skype")
+                        ul.contacts__list
+                            li.contacts__item
+                                .contacts__link 
+                                    svg.contacts__icon: use(xlink:href="assets/images/sprite.svg#skype")
                                 .contacts-content skype_kdn
-                            li.start__page_soc-item--c
-                                a.start__page_soc-link--c(href="https://www.vk.com/")
-                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#envelope")
+                            li.contacts__item
+                                .contacts__link
+                                    svg.contacts__icon: use(xlink:href="assets/images/sprite.svg#envelope")
                                 .contacts-content astahov@gmail.com
-                            li.start__page_soc-item--c
-                                a.start__page_soc-link--c(href="https://www.vk.com/")
-                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#phone")
+                            li.contacts__item
+                                .contacts__link
+                                    svg.contacts__icon: use(xlink:href="assets/images/sprite.svg#phone")
                                 .contacts-content +7 931 200 93 24
-                            li.start__page_soc-item--c
-                                a.start__page_soc-link--c(href="https://www.vk.com/")
-                                    svg.start__page_soc-icon: use(xlink:href="assets/images/sprite.svg#map_marker")
-                                .contacts-content г. Новосибирск, ул. Инская, д.5
-        include ../common/footer-map.pug      
+                            li.contacts__item
+                                .contacts__link
+                                    svg.contacts__icon: use(xlink:href="assets/images/sprite.svg#map_marker")
+                                .contacts__content г. Новосибирск, ул. Инская, д.5
+            include ../common/footer-map.pug      
                                                 

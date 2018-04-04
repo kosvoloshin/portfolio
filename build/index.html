@@ -9,86 +9,101 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./assets/styles/app.min.css">
     <script src="./assets/scripts/bundle.js" defer></script>
-    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPL-MDaTlmC6huqPy5amsT-j8XYGHVJAc&amp;callback=initMap"></script>
   </head>
   <body>
     <div class="wrapper">
+      <div class="parallax" id="parallax">
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-1.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-2.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-3.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-4.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-5.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-6.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-7.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-8.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-9.png"></div>
+        <div class="parallax__layer"><img class="parallax__image" src="./assets/images/Layer-10.png"></div>
+      </div>
       <h1 class="visuallyhidden">Главная</h1>
       <div class="start">
-        <div class="start__login-btn"><a class="login__btn-link" href="#">Авторизоваться</a></div>
-        <div class="start__page">
-          <div class="start__page-info">
-            <div class="start__page-photo" style="background-image: url('./assets/images/photo.png')"></div>
-            <div class="start__page-name">Владимир Астахов</div>
-            <div class="start__page-desk">Личный сайт веб разработчика</div>
-            <div class="start__page_soc">
-              <ul class="start__page_soc-items">
-                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
-                      <use xlink:href="assets/images/sprite.svg#vk"></use>
-                    </svg></a></li>
-                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
-                      <use xlink:href="assets/images/sprite.svg#github"></use>
-                    </svg></a></li>
-                <li class="start__page_soc-item"><a class="start__page_soc-link" href="https://www.vk.com/">
-                    <svg class="start__page_soc-icon">
-                      <use xlink:href="assets/images/sprite.svg#in"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="start__page_menu">
-            <ul class="start__page_menu-items">
-              <li class="start__page_menu-item"><a class="start__page_menu-link" href="works.html">Мои работы</a></li>
-              <li class="start__page_menu-item"><a class="start__page_menu-link" href="about.html">Обо мне</a></li>
-              <li class="start__page_menu-item"><a class="start__page_menu-link" href="blog.html">Блог</a></li>
-            </ul>
-          </div>
-          <div class="start__page_log">
-            <h1 class="start__page_log-title">Авторизуйтесь</h1>
-            <div class="start__page_log-form">
-              <div class="start__page_log-icon">
-                <svg class="start__page_log-pic">
-                  <use xlink:href="assets/images/sprite.svg#login"></use>
-                </svg>
+        <div class="start__login-btn"><a class="login__btn-link" id="login" href="#">Авторизоваться</a></div>
+        <div class="flip">
+          <div class="start__page">
+            <div class="start__page-info">
+              <div class="start__page-photo" style="background-image: url('./assets/images/photo.png')"></div>
+              <div class="start__page-name">Владимир Астахов</div>
+              <div class="start__page-desk">Личный сайт веб разработчика</div>
+              <div class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://www.github.com/">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite.svg#github"></use>
+                      </svg></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/">
+                      <svg class="socials__icon">
+                        <use xlink:href="assets/images/sprite.svg#in"></use>
+                      </svg></a></li>
+                </ul>
               </div>
-              <label class="visuallyhidden">Логин</label>
-              <input class="start__page_log-in" type="text" name="login" placeholder="Логин">
-            </div>
-            <div class="start__page_log-form">
-              <div class="start__page_log-icon">
-                <svg class="start__page_log-pic">
-                  <use xlink:href="assets/images/sprite.svg#password"></use>
-                </svg>
-                <label class="visuallyhidden">Пароль</label>
+              <div class="nav-menu">
+                <ul class="nav-menu__list">
+                  <li class="nav-menu__item"><a class="nav-menu__link" href="works.html">Мои работы</a></li>
+                  <li class="nav-menu__item"><a class="nav-menu__link" href="about.html">Обо мне</a></li>
+                  <li class="nav-menu__item"><a class="nav-menu__link" href="blog.html">Блог</a></li>
+                </ul>
               </div>
-              <input class="start__page_log-in" type="text" name="password" placeholder="Пароль">
             </div>
-            <div class="start__page_log-human">
-              <label class="start__page_log-block">
-                <input class="start__page_log-check visuallyhidden" type="checkbox" name="human">
-                <div class="start__page_log-fake"></div>
-                <div class="start__page_log-text">Я человек</div>
-              </label>
+            <div class="login">
+              <h2 class="login__title">Авторизуйтесь</h2>
+              <div class="login__form">
+                <div class="login__form-icon">
+                  <svg class="login__form-pic">
+                    <use xlink:href="assets/images/sprite.svg#login"></use>
+                  </svg>
+                </div>
+                <label class="visuallyhidden">Логин</label>
+                <input class="login__form-type" type="text" name="login" placeholder="Логин">
+              </div>
+              <div class="login__form">
+                <div class="login__form-icon">
+                  <svg class="login__form-pic">
+                    <use xlink:href="assets/images/sprite.svg#password"></use>
+                  </svg>
+                  <label class="visuallyhidden">Пароль</label>
+                </div>
+                <input class="login__form-type" type="text" name="password" placeholder="Пароль">
+              </div>
+              <div class="login__form-human">
+                <label class="login__form-block">
+                  <input class="login__form-check visuallyhidden" type="checkbox" name="human">
+                  <div class="login__form-fake"></div>
+                  <div class="login__form-text">Я человек</div>
+                </label>
+              </div>
+              <div class="login__form-desk">Вы точно не робот?</div>
+              <div class="login__form-row">
+                <label class="login__form-y">
+                  <input class="login__form-r visuallyhidden" type="radio" name="options" value="да">
+                  <div class="login__form-radio-fake"></div>
+                  <div class="login__form-t">Да</div>
+                </label>
+                <label class="login__form-n">
+                  <input class="login__form-r visuallyhidden" type="radio" name="options" value="нет">
+                  <div class="login__form-radio-fake"></div>
+                  <div class="login__form-t">Не уверен</div>
+                </label>
+              </div>
+              <div class="login__form-menu">
+                <ul class="login__form-list">
+                  <li class="login__form-item"><a class="login__form-link" id="toMain" href="#">На главную</a></li>
+                  <li class="login__form-item"><a class="login__form-link" href="#">Войти</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="start__page_log-desk">Вы точно не робот?</div>
-            <div class="start__page_log-row">
-              <label class="start__page_log-y">
-                <input class="start__page_log-r" type="radio">
-                <div class="start__page_log-yes">Да</div>
-              </label>
-              <label class="start__page_log-n">
-                <input class="start__page_log-r" type="radio">
-                <div class="start__page_log-no">Нет</div>
-              </label>
-            </div>
-          </div>
-          <div class="start__page_log-menu">
-            <ul class="start__page_log-items">
-              <li class="start__page_log-item"><a class="start__page_log-link" href="index.html">На главную</a></li>
-              <li class="start__page_log-item"><a class="start__page_log-link" href="#">Войти</a></li>
-            </ul>
           </div>
         </div>
         <div class="start__copy">Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
