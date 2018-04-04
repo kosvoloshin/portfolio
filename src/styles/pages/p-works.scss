@@ -36,7 +36,7 @@
 .block-title-b {
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 50%; 
     width: 100%;
     transform: translate(-50%, -50%);
     font-family: 'BERNIER';
@@ -51,14 +51,7 @@
         width: 22px;
         display: inline-block;
         vertical-align: middle;
-        position: absolute;
-        left: 0px;
-        top: 40px;
-
-        @include phones {
-            top: 50%;
-            left: 10%;
-        }
+        margin-right: 30px;
     }
 
     &:after {
@@ -68,14 +61,7 @@
         width: 22px;
         display: inline-block;
         vertical-align: middle;
-        position: absolute;
-        right: 0;
-        bottom: 40px;
-
-        @include phones {
-            top: 50%;
-            right: 10%;
-        }
+        margin-left: 30px;
     }
 
     @include phones {

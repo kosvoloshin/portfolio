@@ -28,18 +28,22 @@
 .blog-nav__item {
     text-align: right;
     padding: 15px;
-    border-right: 3px solid transparent;
     transition: .3s;
+    border-right: 3px solid transparent;
     cursor: pointer;
 
     &:hover {
-        border-color: #00bfa5;
+        border-right: 3px solid #00bfa5;
     }
-    
+
     &:hover .blog-nav__link {
         color: #00bfa5;
         font-weight: 450;
     }
+}
+
+.blog-nav__item.active {
+    border-right: 3px solid #00bfa5;
 }
 
 .blog-nav__link {

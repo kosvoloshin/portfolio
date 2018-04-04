@@ -15,3 +15,6 @@ flipInit.init();
 require('./common/parallax');
 
 require('./common/scroll-anchor');
+
+require('./common/blog-scroll');
+
