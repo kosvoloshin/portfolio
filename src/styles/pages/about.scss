@@ -29,6 +29,12 @@
         width: 100%;
         flex: 1;
     }
+
+    @include desktop {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
 }
 
 .about__left-title {
@@ -49,6 +55,10 @@
         width: 50%;
         height: 9%;
         bottom: 94%;
+    }
+
+    @include desktop {
+        left: 5%;
     }
 }
 
@@ -94,6 +104,10 @@
         font-size: 35px;
         top: 0;
     }
+
+    @include desktop {
+        left: 10%;
+    }
 }
 
 .about__left-content {
@@ -101,6 +115,11 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20%;
+
+    @include desktop {
+        width: 70%;
+        padding-top: 0;
+    }
 }
 
 .user__desc-img {
