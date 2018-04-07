@@ -5,79 +5,89 @@ block variables
 
 block content
     .wrapper
-        h1.visuallyhidden Мои работы
-        include ../common/hamburger-menu.pug 
-        include ../common/section-hero.pug
-        section.p-works#section2
-            include ../common/triangle.pug
-            .p-works__title
-                svg.p-works__title-desk: use(xlink:href="assets/images/sprite.svg#works_header")
-                .p-works__title-b
-                    h2.block-title-b Мои работы 
-        section.section.works
-            .works-info
-                .works-info__title
-                    .block-title__w Сайт школы онлайн
-                    .block-title__w1 образования
-                .works-info__tech HTML, CSS, JAVASCRIPT
-                button.works-info__btn(type="button")
-                    svg.works-info__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
-                    span.works-info__btn-text Посмотреть сайт
-            .works-display
-                .works-display__slider
-                    .works-display__slider-item: img.works-display__slider-pic(src="./assets/images/item1.png")
-            .works-btns
-                .works-btns__item
-                    .works-btns__pic
-                        button.slider-down(type="button")
-                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
-                .works-btns__item
-                    .works-btns__pic
-                        button.slider-down(type="button")
-                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
-        section.a-works
-            .a-works__title
-                svg.a-works__title-desk: use(xlink:href="assets/images/sprite.svg#about_header")
-                .a-works__title-b
-                    h2.block-title-a Что обо мне говорят
-        section.section.reviews
-            .reviews__content
-                .reviews__info
-                    .reviews__icon: img(src="./assets/images/quot.png")
-                    .reviews__text
-                        p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                    .reviews__user
-                        .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
-                        .reviews__user-info
-                            .reviews__user-info-name Ковальчук Дмитрий
-                            .reviews__user-info-pos основатель Loftschool
-                .reviews__info--r
-                    .reviews__icon: img(src="./assets/images/quot.png")
-                    .reviews__text
-                        p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                    .reviews__user
-                        .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
-                        .reviews__user-info
-                            .reviews__user-info-name Сабанцев Владимир
-                            .reviews__user-info-pos преподаватель
-            form.reviews__form.form
-                .form-desk
-                    .form-desk__title
-                        h3.block-title-form Связаться со мной
-                    .form-desk__row
-                        label.visuallyhidden  Имя
-                        input.form-desk__row-b(type="text" name="name" placeholder="Имя" required)
-                    .form-desk__row
-                        label.visuallyhidden  Email
-                        input.form-desk__row-b(type="text" name="email" placeholder="Email" required)
-                    .form-desk__mes
-                        label.visuallyhidden  Ваше сообщение
-                        textarea.form-desk__mes-b(name="message" placeholder="Ваше сообщение" required)
-                .form-btns
-                    .form-btns__item
-                        button.form-btns__submit(type="submit" value="submit") Отправить
-                    .form-btns__item
-                        button.form-btns__delete(type="reset" value="reset") Очистить
-            a.works__up#next(href="#section1")
-                svg.up-arrow: use(xlink:href="assets/images/sprite.svg#arrow_down")
-            include ../common/footer-works.pug 
+        .preloader
+            .preloader__spinner
+                .preloader__animation
+                .preloader__percents 0%
+        .scroll-parallax
+            .scroll-parallax__container
+                - for (var i = 1; i < 10; i++)
+                    .scroll-parallax__layer
+                        img(src=`/assets/images/Layer-${i}.png`).scroll-parallax__image
+                .parallax__content
+                h1.visuallyhidden Мои работы
+                include ../common/hamburger-menu.pug 
+                include ../common/section-hero.pug
+                section.p-works#section2
+                    include ../common/triangle.pug
+                    .p-works__title
+                        svg.p-works__title-desk: use(xlink:href="assets/images/sprite.svg#works_header")
+                        .p-works__title-b
+                            h2.block-title-b Мои работы 
+                section.section.works
+                    .works-info
+                        .works-info__title
+                            .block-title__w Сайт школы онлайн
+                            .block-title__w1 образования
+                        .works-info__tech HTML, CSS, JAVASCRIPT
+                        button.works-info__btn(type="button")
+                            svg.works-info__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                            span.works-info__btn-text Посмотреть сайт
+                    .works-display
+                        .works-display__slider
+                            .works-display__slider-item: img.works-display__slider-pic(src="./assets/images/item1.png")
+                    .works-btns
+                        .works-btns__item
+                            .works-btns__pic
+                                button.slider-down(type="button")
+                                    svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                        .works-btns__item
+                            .works-btns__pic
+                                button.slider-down(type="button")
+                                    svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                section.a-works
+                    .a-works__title
+                        svg.a-works__title-desk: use(xlink:href="assets/images/sprite.svg#about_header")
+                        .a-works__title-b
+                            h2.block-title-a Что обо мне говорят
+                section.section.reviews
+                    .reviews__content
+                        .reviews__info
+                            .reviews__icon: img(src="./assets/images/quot.png")
+                            .reviews__text
+                                p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                            .reviews__user
+                                .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                                .reviews__user-info
+                                    .reviews__user-info-name Ковальчук Дмитрий
+                                    .reviews__user-info-pos основатель Loftschool
+                        .reviews__info--r
+                            .reviews__icon: img(src="./assets/images/quot.png")
+                            .reviews__text
+                                p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                            .reviews__user
+                                .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
+                                .reviews__user-info
+                                    .reviews__user-info-name Сабанцев Владимир
+                                    .reviews__user-info-pos преподаватель
+                    form.reviews__form.form
+                        .form-desk
+                            .form-desk__title
+                                h3.block-title-form Связаться со мной
+                            .form-desk__row
+                                label.visuallyhidden  Имя
+                                input.form-desk__row-b(type="text" name="name" placeholder="Имя" required)
+                            .form-desk__row
+                                label.visuallyhidden  Email
+                                input.form-desk__row-b(type="text" name="email" placeholder="Email" required)
+                            .form-desk__mes
+                                label.visuallyhidden  Ваше сообщение
+                                textarea.form-desk__mes-b(name="message" placeholder="Ваше сообщение" required)
+                        .form-btns
+                            .form-btns__item
+                                button.form-btns__submit(type="submit" value="submit") Отправить
+                            .form-btns__item
+                                button.form-btns__delete(type="reset" value="reset") Очистить
+                    a.works__up#next(href="#section1")
+                        svg.up-arrow: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                    include ../common/footer-works.pug 

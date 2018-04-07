@@ -2,6 +2,14 @@
 
 slider(); // инициализируем слайдер*/
 
+const $ = require('jquery');
+
+import preloader from './common/preloader';
+
+$(document).ready(() => {
+  preloader();
+})
+
 require('./common/google-maps');
 
 const menuInit = require('./common/menu');
@@ -19,5 +27,3 @@ require('./common/scroll-anchor');
 require('./common/blog-scroll');
 
 require('./common/blog-nav');
-
-

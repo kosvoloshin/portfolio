@@ -4,8 +4,6 @@ if($('.nav').length){
     var main = function() { 
         
         $('.nav__btn').click(function() { 
-            console.log('hi');
-            
             $('.nav').animate({ 
                 left: '0%'
             }, 400);
