@@ -12,164 +12,184 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1 class="visuallyhidden">Блог</h1>
-      <div class="full-m" id="fullMenu">
-        <nav class="full-m__nav">
-          <ul class="full-m__nav-list">
-            <li class="full-m__nav-item"><a class="full-m__nav-link" href="works.html">Мои работы</a></li>
-            <li class="full-m__nav-item"><a class="full-m__nav-link" href="blog.html">Блог</a></li>
-            <li class="full-m__nav-item"><a class="full-m__nav-link" href="about.html">Обо мне</a></li>
-            <li class="full-m__nav-item"><a class="full-m__nav-link" href="index.html">Авторизация</a></li>
-          </ul>
-        </nav>
+      <div class="preloader">
+        <div class="preloader__spinner">
+          <div class="preloader__animation"></div>
+          <div class="preloader__percents">0%</div>
+        </div>
       </div>
-      <section class="section hero blog">
-        <div class="socials--hero">
-          <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
-                <svg class="socials__icon--white">
-                  <use xlink:href="assets/images/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
-                <svg class="socials__icon--white">
-                  <use xlink:href="assets/images/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
-                <svg class="socials__icon--white">
-                  <use xlink:href="assets/images/sprite.svg#in"> </use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <button class="hamburger" type="button" id="openFull">
-          <div class="hero__menu"></div>
-        </button>
-        <div class="hero__title">
-          <svg class="section__title-desc-blog">
-            <use xlink:href="./assets/images/sprite.svg#blog_header"></use>
-          </svg>
-        </div>
-        <div class="hero__user user">
-          <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
-          <div class="user__blog">БЛОГ</div>
-          <div class="user__desc-blog">Статьи, которые я написал</div>
-        </div>
-        <svg class="triangle-b" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
-          <polygon class="triangle__left-w" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
-          <polygon class="triangle__right-w" points="1000,0   1000,86   500,86   500,75.5"></polygon>
-        </svg>
-      </section>
-      <main class="blog-nav">
-        <aside class="blog-nav__list">
-          <ul class="blog-nav__items">
-            <li class="blog-nav__item"><a class="blog-nav__link" href="#first">Самое важное в SASS</a></li>
-            <li class="blog-nav__item"><a class="blog-nav__link" href="#second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
-            <li class="blog-nav__item"><a class="blog-nav__link" href="#third">Самый необходимый набор Gulp плагинов</a></li>
-            <li class="blog-nav__item"><a class="blog-nav__link" href="#fourth">Почему я выбрал Pug</a></li>
-          </ul>
-        </aside>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#first">Самое важное в SASS</a></li>
-            <li class="nav__item"><a class="nav__link" href="#second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
-            <li class="nav__item"><a class="nav__link" href="#third">Самый необходимый набор Gulp плагинов</a></li>
-            <li class="nav__item"><a class="nav__link" href="#fourth">Почему я выбрал Pug</a></li>
-          </ul>
-          <div class="nav__btn"></div>
-        </nav>
-        <section class="main-blog">
-          <h2 class="visuallyhidden">Статьи</h2>
-          <ul class="main-blog__items">
-            <li class="main-blog__item" id="first">
-              <article class="main-blog__body">
-                <div class="main-blog__headline">
-                  <h2 class="main-blog__title">Самое важное в sass</h2>
-                  <div class="main-blog__date">22 ноября 2016</div>
-                </div>
-                <div class="main-blog__content">
-                  <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
-                  <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
-                </div>
-              </article>
-            </li>
-            <li class="main-blog__item" id="second">
-              <article class="main-blog__body">
-                <div class="main-blog__headline">
-                  <h2 class="main-blog__title">Приёмы в верстке, без которых не обходится ни один сайт</h2>
-                  <div class="main-blog__date">13 ноября 2016</div>
-                </div>
-                <div class="main-blog__content">
-                  <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
-                  <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
-                </div>
-              </article>
-            </li>
-            <li class="main-blog__item" id="third">
-              <article class="main-blog__body">
-                <div class="main-blog__headline">
-                  <h2 class="main-blog__title">Самый необходимый набор Gulp плагинов</h2>
-                  <div class="main-blog__date">10 ноября 2016</div>
-                </div>
-                <div class="main-blog__content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum quibusdam incidunt beatae architecto dolor aliquam eveniet, esse assumenda quo! Reiciendis ea eaque cumque fuga minima! Veniam repellat consequatur at?Animi velit voluptate culpa, quia in laboriosam minus praesentium asperiores quas, facilis temporibus quo dignissimos tempore nulla maiores, ipsam doloribus quis corporis officia porro pariatur debitis! Maiores aliquam eaque dignissimos.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis ipsa mollitia repudiandae tempore, quam sed molestiae expedita corrupti magnam nobis tempora minima obcaecati libero sit aut! Voluptatem, possimus iste?Nesciunt similique sequi debitis fugit impedit repellat dolorum, voluptatem rerum non magnam facilis quia at repudiandae voluptate culpa quae explicabo asperiores et numquam. Consectetur numquam qui commodi ipsam amet laudantium.Perferendis similique, nemo facere beatae eum provident officiis nam. Optio minima magnam impedit atque! Nemo, repellat voluptates minus magni facilis distinctio eum, aliquid architecto assumenda aspernatur laudantium. Explicabo, error suscipit.Voluptatibus tempora omnis consectetur cumque quasi nostrum, necessitatibus odit distinctio dolorem magni dicta, fuga suscipit quia asperiores officia maxime vero ipsum porro similique facilis labore, excepturi nesciunt! Enim, tempore rerum.</p>
-                </div>
-              </article>
-            </li>
-            <li class="main-blog__item" id="fourth">
-              <article class="main-blog__body">
-                <div class="main-blog__headline">
-                  <h2 class="main-blog__title">Почему я выбрал Pug</h2>
-                  <div class="main-blog__date">10 октября 2016</div>
-                </div>
-                <div class="main-blog__content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum quibusdam incidunt beatae architecto dolor aliquam eveniet, esse assumenda quo! Reiciendis ea eaque cumque fuga minima! Veniam repellat consequatur at?Animi velit voluptate culpa, quia in laboriosam minus praesentium asperiores quas, facilis temporibus quo dignissimos tempore nulla maiores, ipsam doloribus quis corporis officia porro pariatur debitis! Maiores aliquam eaque dignissimos.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis ipsa mollitia repudiandae tempore, quam sed molestiae expedita corrupti magnam nobis tempora minima obcaecati libero sit aut! Voluptatem, possimus iste?Nesciunt similique sequi debitis fugit impedit repellat dolorum, voluptatem rerum non magnam facilis quia at repudiandae voluptate culpa quae explicabo asperiores et numquam. Consectetur numquam qui commodi ipsam amet laudantium.Perferendis similique, nemo facere beatae eum provident officiis nam. Optio minima magnam impedit atque! Nemo, repellat voluptates minus magni facilis distinctio eum, aliquid architecto assumenda aspernatur laudantium. Explicabo, error suscipit.Voluptatibus tempora omnis consectetur cumque quasi nostrum, necessitatibus odit distinctio dolorem magni dicta, fuga suscipit quia asperiores officia maxime vero ipsum porro similique facilis labore, excepturi nesciunt! Enim, tempore rerum.</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-        </section>
-      </main>
-      <footer class="footer footer--blog">
-        <div class="footer__row">
-          <div class="footer__col footer__col--left">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
-                <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
-                <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-                <li class="menu__item"><a class="menu__link" href="index.html">Авторизация </a></li>
+      <div class="scroll-parallax">
+        <div class="scroll-parallax__container">
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-1.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-2.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-3.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-4.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-5.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-6.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-7.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-8.png"></div>
+          <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="/assets/images/Layer-9.png"></div>
+          <div class="parallax__content"></div>
+          <h1 class="visuallyhidden">Блог</h1>
+          <div class="full-m" id="fullMenu">
+            <nav class="full-m__nav">
+              <ul class="full-m__nav-list">
+                <li class="full-m__nav-item"><a class="full-m__nav-link" href="works.html">Мои работы</a></li>
+                <li class="full-m__nav-item"><a class="full-m__nav-link" href="blog.html">Блог</a></li>
+                <li class="full-m__nav-item"><a class="full-m__nav-link" href="about.html">Обо мне</a></li>
+                <li class="full-m__nav-item"><a class="full-m__nav-link" href="index.html">Авторизация</a></li>
               </ul>
             </nav>
           </div>
-          <div class="footer__col footer__col--right">
-            <ul class="socials__list">
-              <li class="socials__item socials__item--black"><a class="socials__link" href="https://www.vk.com/">
-                  <svg class="socials__icon--black">
-                    <use xlink:href="assets/images/sprite.svg#vk_round"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
-                  <svg class="socials__icon--black">
-                    <use xlink:href="assets/images/sprite.svg#github_round"></use>
-                  </svg></a></li>
-              <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
-                  <svg class="socials__icon--black">
-                    <use xlink:href="assets/images/sprite.svg#in_round"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer__row">
-          <div class="footer__col footer__col--left">
-            <div class="footer__text">
-              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.      </p>
+          <section class="section hero blog">
+            <div class="socials--hero">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                    <svg class="socials__icon--white">
+                      <use xlink:href="assets/images/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                    <svg class="socials__icon--white">
+                      <use xlink:href="assets/images/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://www.vk.com/">
+                    <svg class="socials__icon--white">
+                      <use xlink:href="assets/images/sprite.svg#in"> </use>
+                    </svg></a></li>
+              </ul>
             </div>
-          </div>
-          <div class="footer__col footer__col--right">
-            <div class="start__copy--f">Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
-          </div>
+            <button class="hamburger" type="button" id="openFull">
+              <div class="hero__menu"></div>
+            </button>
+            <div class="hero__title">
+              <svg class="section__title-desc-blog">
+                <use xlink:href="./assets/images/sprite.svg#blog_header"></use>
+              </svg>
+            </div>
+            <div class="hero__user user">
+              <div class="user__img"><img class="user__img-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>
+              <div class="user__blog">БЛОГ</div>
+              <div class="user__desc-blog">Статьи, которые я написал</div>
+            </div>
+            <svg class="triangle-b" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none">
+              <polygon class="triangle__left-w" points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+              <polygon class="triangle__right-w" points="1000,0   1000,86   500,86   500,75.5"></polygon>
+            </svg>
+          </section>
+          <main class="blog-nav">
+            <aside class="blog-nav__list">
+              <ul class="blog-nav__items">
+                <li class="blog-nav__item"><a class="blog-nav__link" href="#first">Самое важное в SASS</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__link" href="#second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__link" href="#third">Самый необходимый набор Gulp плагинов</a></li>
+                <li class="blog-nav__item"><a class="blog-nav__link" href="#fourth">Почему я выбрал Pug</a></li>
+              </ul>
+            </aside>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#first">Самое важное в SASS</a></li>
+                <li class="nav__item"><a class="nav__link" href="#second">Приемы в верстке, без которых не обходится ни один сайт</a></li>
+                <li class="nav__item"><a class="nav__link" href="#third">Самый необходимый набор Gulp плагинов</a></li>
+                <li class="nav__item"><a class="nav__link" href="#fourth">Почему я выбрал Pug</a></li>
+              </ul>
+              <div class="nav__btn"></div>
+            </nav>
+            <section class="main-blog">
+              <h2 class="visuallyhidden">Статьи</h2>
+              <ul class="main-blog__items">
+                <li class="main-blog__item" id="first">
+                  <article class="main-blog__body">
+                    <div class="main-blog__headline">
+                      <h2 class="main-blog__title">Самое важное в sass</h2>
+                      <div class="main-blog__date">22 ноября 2016</div>
+                    </div>
+                    <div class="main-blog__content">
+                      <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                      <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="main-blog__item" id="second">
+                  <article class="main-blog__body">
+                    <div class="main-blog__headline">
+                      <h2 class="main-blog__title">Приёмы в верстке, без которых не обходится ни один сайт</h2>
+                      <div class="main-blog__date">13 ноября 2016</div>
+                    </div>
+                    <div class="main-blog__content">
+                      <p>Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.</p>
+                      <p>Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="main-blog__item" id="third">
+                  <article class="main-blog__body">
+                    <div class="main-blog__headline">
+                      <h2 class="main-blog__title">Самый необходимый набор Gulp плагинов</h2>
+                      <div class="main-blog__date">10 ноября 2016</div>
+                    </div>
+                    <div class="main-blog__content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum quibusdam incidunt beatae architecto dolor aliquam eveniet, esse assumenda quo! Reiciendis ea eaque cumque fuga minima! Veniam repellat consequatur at?Animi velit voluptate culpa, quia in laboriosam minus praesentium asperiores quas, facilis temporibus quo dignissimos tempore nulla maiores, ipsam doloribus quis corporis officia porro pariatur debitis! Maiores aliquam eaque dignissimos.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis ipsa mollitia repudiandae tempore, quam sed molestiae expedita corrupti magnam nobis tempora minima obcaecati libero sit aut! Voluptatem, possimus iste?Nesciunt similique sequi debitis fugit impedit repellat dolorum, voluptatem rerum non magnam facilis quia at repudiandae voluptate culpa quae explicabo asperiores et numquam. Consectetur numquam qui commodi ipsam amet laudantium.Perferendis similique, nemo facere beatae eum provident officiis nam. Optio minima magnam impedit atque! Nemo, repellat voluptates minus magni facilis distinctio eum, aliquid architecto assumenda aspernatur laudantium. Explicabo, error suscipit.Voluptatibus tempora omnis consectetur cumque quasi nostrum, necessitatibus odit distinctio dolorem magni dicta, fuga suscipit quia asperiores officia maxime vero ipsum porro similique facilis labore, excepturi nesciunt! Enim, tempore rerum.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="main-blog__item" id="fourth">
+                  <article class="main-blog__body">
+                    <div class="main-blog__headline">
+                      <h2 class="main-blog__title">Почему я выбрал Pug</h2>
+                      <div class="main-blog__date">10 октября 2016</div>
+                    </div>
+                    <div class="main-blog__content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum earum quibusdam incidunt beatae architecto dolor aliquam eveniet, esse assumenda quo! Reiciendis ea eaque cumque fuga minima! Veniam repellat consequatur at?Animi velit voluptate culpa, quia in laboriosam minus praesentium asperiores quas, facilis temporibus quo dignissimos tempore nulla maiores, ipsam doloribus quis corporis officia porro pariatur debitis! Maiores aliquam eaque dignissimos.</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit officiis ipsa mollitia repudiandae tempore, quam sed molestiae expedita corrupti magnam nobis tempora minima obcaecati libero sit aut! Voluptatem, possimus iste?Nesciunt similique sequi debitis fugit impedit repellat dolorum, voluptatem rerum non magnam facilis quia at repudiandae voluptate culpa quae explicabo asperiores et numquam. Consectetur numquam qui commodi ipsam amet laudantium.Perferendis similique, nemo facere beatae eum provident officiis nam. Optio minima magnam impedit atque! Nemo, repellat voluptates minus magni facilis distinctio eum, aliquid architecto assumenda aspernatur laudantium. Explicabo, error suscipit.Voluptatibus tempora omnis consectetur cumque quasi nostrum, necessitatibus odit distinctio dolorem magni dicta, fuga suscipit quia asperiores officia maxime vero ipsum porro similique facilis labore, excepturi nesciunt! Enim, tempore rerum.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </section>
+          </main>
+          <footer class="footer footer--blog">
+            <div class="footer__row">
+              <div class="footer__col footer__col--left">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="works.html">Мои работы</a></li>
+                    <li class="menu__item"><a class="menu__link" href="about.html">Обо мне</a></li>
+                    <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html">Авторизация </a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__col footer__col--right">
+                <ul class="socials__list">
+                  <li class="socials__item socials__item--black"><a class="socials__link" href="https://www.vk.com/">
+                      <svg class="socials__icon--black">
+                        <use xlink:href="assets/images/sprite.svg#vk_round"></use>
+                      </svg></a></li>
+                  <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.github.com/">
+                      <svg class="socials__icon--black">
+                        <use xlink:href="assets/images/sprite.svg#github_round"></use>
+                      </svg></a></li>
+                  <li class="socials__item socials__item--black"><a class="start__page_soc-link" href="https://www.linkedin.com/">
+                      <svg class="socials__icon--black">
+                        <use xlink:href="assets/images/sprite.svg#in_round"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__row">
+              <div class="footer__col footer__col--left">
+                <div class="footer__text">
+                  <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.      </p>
+                </div>
+              </div>
+              <div class="footer__col footer__col--right">
+                <div class="start__copy--f">Владимир Астахов | создано с любовью в LoftSchool | 2016</div>
+              </div>
+            </div>
+          </footer>
         </div>
-      </footer>
+      </div>
     </div>
   </body>
 </html>
