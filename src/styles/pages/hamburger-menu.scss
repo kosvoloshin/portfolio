@@ -1,4 +1,5 @@
 .full-m {
+    display: flex;
     flex-direction: column;
     background-color: rgba($color: #20c6af, $alpha: 0.8);
     background-size: cover;
@@ -6,11 +7,14 @@
     width: 100%;
     position: fixed;
     z-index: 100;
-    display: none;
+    top: -100%;
+    transition: .5s;
 }
 
 .full-m.active {
-    display: flex;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
 }
 
 .full-m__nav {
