@@ -1,11 +1,17 @@
 section.section.hero#section1
+    .scroll-parallax
+            .scroll-parallax__container
+                - for (var i = 1; i < 10; i++)
+                    .scroll-parallax__layer
+                        img(src=`./assets/images/Layer-${i}.png`).scroll-parallax__image
+                .parallax__content
     .socials--hero
         ul.socials__list
-            li.socials__item: a.socials__link(href="https://www.vk.com/")
+            li.socials__item: a.socials__link(href="https://www.vk.com/" target="blanc")
                 svg.socials__icon--white: use(xlink:href="assets/images/sprite.svg#vk")
-            li.socials__item: a.socials__link(href="https://www.vk.com/")
+            li.socials__item: a.socials__link(href="https://www.vk.com/" target="blanc")
                 svg.socials__icon--white: use(xlink:href="assets/images/sprite.svg#github")
-            li.socials__item: a.socials__link(href="https://www.vk.com/")
+            li.socials__item: a.socials__link(href="https://www.vk.com/" target="blanc")
                 svg.socials__icon--white: use(xlink:href="assets/images/sprite.svg#in") 
     button(type="button").hamburger#openFull
         .hero__menu

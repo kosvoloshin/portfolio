@@ -65,6 +65,8 @@
     position: fixed;
     left: -80%;
     top: 0;
+    transition: .5s;
+    z-index: 1;
 }
 
 .nav.fix {
@@ -76,6 +78,10 @@
     @include phones {
         display: block;
     }
+}
+
+.nav.active {
+    transform: translateX(100%);
 }
 
 .nav__list {
@@ -93,7 +99,7 @@
 .nav__link {
     font-family: 'Roboto';
     font-size: 16px;
-    color: #fff;
+    color: rgba($color: #fff, $alpha: 0.7);
     text-decoration: none;
     line-height: 1.42;
     padding: 15px;
@@ -106,12 +112,13 @@
     z-index: 1;
 
     &:hover {
-        border-right: 3px solid #fff;
+        color: rgba($color: #fff, $alpha: 1.0);
+        font-weight: 450;
     }
 }
 
 .nav__link.active {
-    border-right: 3px solid #fff;
+    color: rgba($color: #fff, $alpha: 1.0);
     font-weight: 450;
 }
 

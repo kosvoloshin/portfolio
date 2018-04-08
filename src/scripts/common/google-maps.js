@@ -4,9 +4,9 @@ const $ = require('jquery');
 
 if($('#map').length) {
     window.initMap = function() {
-    var uluru = { lat: 48.9481767, lng: 38.4878774 };
+    var uluru = { lat: 50.4501, lng: 30.5234 };
     var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
+    zoom: 13,
     zoomControl: false,
     scaleControl: true,
     mapTypeControl: false,

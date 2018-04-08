@@ -7,7 +7,6 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    min-width: 768px;
 
     @include tablets {
         background-image: url('../images/bg-rev-tablets.jpg');
@@ -184,7 +183,6 @@
         background-position: center -50%;
         background-position: center center;
         background-repeat: no-repeat;
-        min-width: 768px;
 
         @include phones {
             margin: -5px;        

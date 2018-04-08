@@ -27,3 +27,5 @@ require('./common/scroll-anchor');
 require('./common/blog-scroll');
 
 require('./common/blog-nav');
+
+require('./common/circles-active');

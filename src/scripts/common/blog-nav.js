@@ -3,19 +3,12 @@ const $ = require('jquery');
 if($('.nav').length){
     var main = function() { 
         
-        $('.nav__btn').click(function() { 
-            $('.nav').animate({ 
-                left: '0%'
-            }, 400);
+        $('.nav__btn').on('click', function(e) {
+            $('.nav').toggleClass('active');
         });
 
-        $('.nav__link').click(function() { 
-            $('.nav').animate({ 
-                left: '-80%' 
-              }, 400); 
-            $('body').animate({ 
-                left: '0%' 
-            }, 200); 
+        $('.nav__link').on('click', function(e) {
+            $('.nav').removeClass('active');
         });
 
         $('.nav__link').on('click', function(e) {
