@@ -1,14 +1,14 @@
 const $ = require('jquery');
 
-import preloader from './common/preloader';
+/*import preloader from './common/preloader';
 
 $(document).ready(() => {
   preloader();
-})
+})*/
 
-/*const slider = require('./common/slider');
+const slider = require('./common/slider');
 
-slider(); // инициализируем слайдер*/
+slider(); // инициализируем слайдер
 
 require('./common/google-maps');
 

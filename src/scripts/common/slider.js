@@ -1,4 +1,4 @@
-/*const slides = document.querySelectorAll('#slides .slider-item');
+const slides = document.querySelectorAll('#slides .slider-item');
 const next = document.getElementById('nextSlide');
 const previous = document.getElementById('previous');
 const controls = document.querySelectorAll('.controls');
@@ -37,4 +37,4 @@ function sliderInit(){
     }
 }
 
-module.exports = sliderInit;*/
+module.exports = sliderInit;

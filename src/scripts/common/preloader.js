@@ -1,4 +1,4 @@
-const $ = require('jquery');
+/*const $ = require('jquery');
 
 let percentsTotal = 0;
 const preloader = $('.preloader');
@@ -49,4 +49,4 @@ const imgs = imgPaths.toArray();
 
 export default () => {
   loadImages(imgs);
-}
+}*/
