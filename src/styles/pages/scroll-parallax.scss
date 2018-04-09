@@ -1,4 +1,4 @@
-.scroll-parallax__container {
+/*.scroll-parallax__container {
 	background: #9ABDBE;
 	//overflow-x: hidden;
 	//overflow-y: auto;
@@ -51,7 +51,7 @@
     @include phones {
         display: none;
     }
-}
+}*/
 
 /*.parallax__content {
   position: absolute;
@@ -61,7 +61,7 @@
   transform: translateZ(0);
   overflow: hidden;
 }*/
-
+/*
 $layers: 10;
 
 @for $layersNum from $layers through 1 {
@@ -72,4 +72,4 @@ $layers: 10;
 
     transform: translateZ($perspective) scale($scale);
   }
-}
+}*/
