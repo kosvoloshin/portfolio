@@ -1,13 +1,19 @@
 .scroll-parallax__container {
 	background: #9ABDBE;
-	overflow-x: hidden;
-	overflow-y: auto;
-	position: absolute;
+	//overflow-x: hidden;
+	//overflow-y: auto;
+    //position: absolute;
+    position: fixed;
 	top: 0;
 	left: 0;
 	right: 0px;
 	bottom: 0;
     perspective: 100px;
+    z-index: -1;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .scroll-parallax__layer {
@@ -47,14 +53,14 @@
     }
 }
 
-.parallax__content {
+/*.parallax__content {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   transform: translateZ(0);
   overflow: hidden;
-}
+}*/
 
 $layers: 10;
 

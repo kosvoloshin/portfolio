@@ -33,20 +33,6 @@
         </nav>
       </div>
       <section class="section hero" id="section1">
-        <div class="scroll-parallax">
-          <div class="scroll-parallax__container">
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-1.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-2.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-3.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-4.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-5.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-6.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-7.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-8.png"></div>
-            <div class="scroll-parallax__layer"><img class="scroll-parallax__image" src="./assets/images/Layer-9.png"></div>
-            <div class="parallax__content"></div>
-          </div>
-        </div>
         <div class="socials--hero">
           <ul class="socials__list">
             <li class="socials__item"><a class="socials__link" href="https://www.vk.com/" target="blanc">
@@ -95,42 +81,76 @@
         </div>
       </section>
       <section class="section works">
-        <div class="works-info">
-          <div class="works-info__title">
-            <div class="block-title__w">Сайт школы онлайн</div>
-            <div class="block-title__w1">образования</div>
-          </div>
-          <div class="works-info__tech">HTML, CSS, JAVASCRIPT</div>
-          <button class="works-info__btn" type="button">
-            <svg class="works-info__btn-icon">
-              <use xlink:href="assets/images/sprite.svg#link"></use>
-            </svg><span class="works-info__btn-text">Посмотреть сайт</span>
+        <ul class="slider" id="slides">
+          <li class="slider-item active">
+            <div class="slider-item__img"><img class="slider-item__pic" src="./assets/images/work-1.png"></div>
+            <div class="slider-item__info">
+              <div class="slider-item__title">
+                <div class="block-title__w">Сайт школы онлайн</div>
+                <div class="block-title__w1">образования</div>
+              </div>
+              <div class="slider-item__tech">HTML, CSS, JAVASCRIPT</div>
+              <button class="slider-item__btn" type="button">
+                <svg class="slider-item__btn-icon">
+                  <use xlink:href="assets/images/sprite.svg#link"></use>
+                </svg><span class="slider-item__btn-text">Посмотреть сайт</span>
+              </button>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-item__img"><img class="slider-item__pic" src="./assets/images/work-2.png"></div>
+            <div class="slider-item__info">
+              <div class="slider-item__title">
+                <div class="block-title__w">itloft</div>
+              </div>
+              <div class="slider-item__tech">HTML, CSS, JAVASCRIPT</div>
+              <button class="slider-item__btn" type="button">
+                <svg class="slider-item__btn-icon">
+                  <use xlink:href="assets/images/sprite.svg#link"></use>
+                </svg><span class="slider-item__btn-text">Посмотреть сайт</span>
+              </button>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-item__img"><img class="slider-item__pic" src="./assets/images/work-3.png"></div>
+            <div class="slider-item__info">
+              <div class="slider-item__title">
+                <div class="block-title__w">loftblog</div>
+              </div>
+              <div class="slider-item__tech">HTML, CSS, JAVASCRIPT</div>
+              <button class="slider-item__btn" type="button">
+                <svg class="slider-item__btn-icon">
+                  <use xlink:href="assets/images/sprite.svg#link"></use>
+                </svg><span class="slider-item__btn-text">Посмотреть сайт</span>
+              </button>
+            </div>
+          </li>
+          <li class="slider-item">
+            <div class="slider-item__img"><img class="slider-item__pic" src="./assets/images/work-4.png"></div>
+            <div class="slider-item__info">
+              <div class="slider-item__title">
+                <div class="block-title__w">atma yoga</div>
+              </div>
+              <div class="slider-item__tech">HTML, CSS, JAVASCRIPT</div>
+              <button class="slider-item__btn" type="button">
+                <svg class="slider-item__btn-icon">
+                  <use xlink:href="assets/images/sprite.svg#link"></use>
+                </svg><span class="slider-item__btn-text">Посмотреть сайт</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="slider__buttons">
+          <button class="controls slider__controls-prev" id="previous" type="button">
+            <svg class="slider__controls-pic">
+              <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
+            </svg>
           </button>
-        </div>
-        <div class="works-display">
-          <div class="works-display__slider">
-            <div class="works-display__slider-item"><img class="works-display__slider-pic" src="./assets/images/item1.png"></div>
-          </div>
-        </div>
-        <div class="works-btns">
-          <div class="works-btns__item">
-            <div class="works-btns__pic">
-              <button class="slider-down" type="button">
-                <svg class="slider-down__works">
-                  <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="works-btns__item">
-            <div class="works-btns__pic">
-              <button class="slider-down" type="button">
-                <svg class="slider-down__works">
-                  <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+          <button class="controls slider__controls-next" id="nextSlide" type="button">
+            <svg class="slider__controls-pic">
+              <use xlink:href="assets/images/sprite.svg#arrow_down"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="a-works">
@@ -161,7 +181,7 @@
           <div class="reviews__info--r">
             <div class="reviews__icon"><img src="./assets/images/quot.png"></div>
             <div class="reviews__text">
-              <p>Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!</p>
+              <p>Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!</p>
             </div>
             <div class="reviews__user">
               <div class="reviews__user-pic" style="background-image: url('./assets/images/photo-about.jpg')"></div>

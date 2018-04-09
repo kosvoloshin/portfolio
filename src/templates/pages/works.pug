@@ -19,26 +19,49 @@ block content
                 .p-works__title-b
                     h2.block-title-b Мои работы 
         section.section.works
-            .works-info
-                .works-info__title
-                    .block-title__w Сайт школы онлайн
-                    .block-title__w1 образования
-                .works-info__tech HTML, CSS, JAVASCRIPT
-                button.works-info__btn(type="button")
-                    svg.works-info__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
-                    span.works-info__btn-text Посмотреть сайт
-            .works-display
-                .works-display__slider
-                    .works-display__slider-item: img.works-display__slider-pic(src="./assets/images/item1.png")
-            .works-btns
-                .works-btns__item
-                    .works-btns__pic
-                        button.slider-down(type="button")
-                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
-                .works-btns__item
-                    .works-btns__pic
-                        button.slider-down(type="button")
-                            svg.slider-down__works: use(xlink:href="assets/images/sprite.svg#arrow_down")
+            ul#slides.slider
+                li.slider-item.active
+                    .slider-item__img: img.slider-item__pic(src="./assets/images/work-1.png")
+                    .slider-item__info
+                        .slider-item__title
+                            .block-title__w Сайт школы онлайн
+                            .block-title__w1 образования
+                        .slider-item__tech HTML, CSS, JAVASCRIPT
+                        button.slider-item__btn(type="button")
+                            svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                            span.slider-item__btn-text Посмотреть сайт
+                li.slider-item
+                    .slider-item__img: img.slider-item__pic(src="./assets/images/work-2.png")
+                    .slider-item__info
+                        .slider-item__title
+                            .block-title__w itloft
+                        .slider-item__tech HTML, CSS, JAVASCRIPT
+                        button.slider-item__btn(type="button")
+                            svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                            span.slider-item__btn-text Посмотреть сайт
+                li.slider-item
+                    .slider-item__img: img.slider-item__pic(src="./assets/images/work-3.png")
+                    .slider-item__info
+                        .slider-item__title
+                            .block-title__w loftblog
+                        .slider-item__tech HTML, CSS, JAVASCRIPT
+                        button.slider-item__btn(type="button")
+                            svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                            span.slider-item__btn-text Посмотреть сайт
+                li.slider-item
+                    .slider-item__img: img.slider-item__pic(src="./assets/images/work-4.png")
+                    .slider-item__info
+                        .slider-item__title
+                            .block-title__w atma yoga
+                        .slider-item__tech HTML, CSS, JAVASCRIPT
+                        button.slider-item__btn(type="button")
+                            svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
+                            span.slider-item__btn-text Посмотреть сайт
+            .slider__buttons
+                button.controls.slider__controls-prev#previous(type="button")
+                    svg.slider__controls-pic: use(xlink:href="assets/images/sprite.svg#arrow_down")
+                button.controls.slider__controls-next#nextSlide(type="button")
+                    svg.slider__controls-pic: use(xlink:href="assets/images/sprite.svg#arrow_down")
         section.a-works
             .a-works__title
                 svg.a-works__title-desk: use(xlink:href="assets/images/sprite.svg#about_header")
@@ -58,7 +81,7 @@ block content
                 .reviews__info--r
                     .reviews__icon: img(src="./assets/images/quot.png")
                     .reviews__text
-                        p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        p Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
                     .reviews__user
                         .reviews__user-pic(style="background-image: url('./assets/images/photo-about.jpg')")
                         .reviews__user-info

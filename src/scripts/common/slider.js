@@ -1,5 +1,5 @@
-/*const slides = document.querySelectorAll('#slides .slide');
-const next = document.getElementById('next');
+const slides = document.querySelectorAll('#slides .slider-item');
+const next = document.getElementById('nextSlide');
 const previous = document.getElementById('previous');
 const controls = document.querySelectorAll('.controls');
 
@@ -7,9 +7,9 @@ let currentSlide = 0;
 
 // осуществляет переход к слайду номер n (начиная с 0)
 function goToSlide(n){
-    slides[currentSlide].className = 'slide';
+    slides[currentSlide].className = 'slider-item';
     currentSlide = (n+slides.length)%slides.length; // остаток от деления
-    slides[currentSlide].className = 'slide showing';
+    slides[currentSlide].className = 'slider-item active';
 }
 
 // навешивает обработчики событий на элементы next и previous
@@ -25,7 +25,7 @@ function setupListners(){
 // показывает кнопки для навигации
 function showButtons(){
     for(var i=0; i<controls.length; i++){
-        controls[i].style.display = 'inline-block';
+        controls[i].style.display = 'block';
     }
 }
 
@@ -37,4 +37,4 @@ function sliderInit(){
     }
 }
 
-module.exports = sliderInit;*/
+module.exports = sliderInit;
