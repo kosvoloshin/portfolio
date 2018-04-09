@@ -2,7 +2,8 @@ const $ = require('jquery');
 
 if($('.blog-nav').length){
 $(function(){
-  $('a[href^="#"]').on('click', function(event) {
+  //$('a[href^="#"]').on('click', function(event) {
+    $('.blog-nav__link').on('click', function(event) {
     event.preventDefault();
     
     var sc = $(this).attr("href"),
@@ -43,7 +44,8 @@ if($('.blog-nav').length){
   }
   $(document).ready(function () {
     $(document).on("scroll", onScroll);
-    $("a[href^=#]").click(function(e){
+    // $("a[href^=#]").click(function(e){
+      $(".blog-nav__link").click(function(e){
       e.preventDefault();
       $(document).off("scroll");
       $(menu_selector + " .blog-nav__link.active").removeClass("active");
