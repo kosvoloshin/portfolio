@@ -1,4 +1,4 @@
-/*const $ = require('jquery');
+const $ = require('jquery');
 
 if($('.blog-nav').length){
 $(function(){
@@ -59,5 +59,5 @@ if($('.blog-nav').length){
     });
   });
 }
-}*/
+}
 

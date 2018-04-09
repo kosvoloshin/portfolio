@@ -1,4 +1,4 @@
-/*const $ = require('jquery');
+const $ = require('jquery');
 
 if($('.nav').length){
     var main = function() { 
@@ -32,4 +32,4 @@ if($('.nav').length){
        
       });
     $(document).ready(main);
-}*/
+}
