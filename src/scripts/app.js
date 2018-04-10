@@ -1,10 +1,14 @@
-const $ = require('jquery');
+// const $ = require('jquery');
 
 import preloader from './common/preloader';
 
-$(document).ready(() => {
+preloader();
+
+/*$(document).ready(() => {
   preloader();
-})
+})*/
+
+const $ = require('jquery');
 
 const slider = require('./common/slider');
 

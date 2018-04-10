@@ -9,7 +9,7 @@
 .full-m.active {
     
     .full-m__left {
-        transform: translateX(100%);
+        transform: translateX(102%);
     }
 
     .full-m__right {
@@ -20,19 +20,27 @@
 .full-m__left {
     height: 100%;
     width: 50%;
-    background-color: rgba($color: #20c6af, $alpha: 0.8);
+    background-color: rgba($color: #20c6af, $alpha: 0.9);
     position: fixed;
-    left: -50%;
+    left: calc(-51% + 0.5px);
     transition: .5s;
+
+    @include phones {
+        height: 120%;
+    }
 }
 
 .full-m__right {
     height: 100%;
     width: 50%;
-    background-color: rgba($color: #20c6af, $alpha: 0.8);
+    background-color: rgba($color: #20c6af, $alpha: 0.9);
     position: fixed;
     right: -50%;
     transition: .5s;
+
+    @include phones {
+        height: 120%;
+    }
 }
 
 .full-m__nav {
@@ -83,7 +91,7 @@
         vertical-align: middle;
         margin-right: 20px;
         -webkit-transition: opacity 300ms;
-        transition: width .5s;
+        transition: width .3s;
 
         @include tablets {
             width: 22px;
@@ -104,7 +112,7 @@
         vertical-align: middle;
         margin-left: 20px;
         -webkit-transition: opacity 300ms;
-        transition: width .5s;
+        transition: width .3s;
 
         @include tablets {
             width: 22px;

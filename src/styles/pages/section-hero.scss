@@ -81,6 +81,10 @@
     }
 }
 
+.hamburger.active {
+    position: fixed;
+}
+
 .hero__menu {
     display: inline-block;
     background: rgba($color: #fff, $alpha: 0.7);

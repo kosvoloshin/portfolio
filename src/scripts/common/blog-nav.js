@@ -16,6 +16,17 @@ if($('.nav').length){
             $('.nav__link').removeClass('active');
             $(this).addClass('active');
         });
+        
+        $('.nav__link').on('click', function(event) {
+        event.preventDefault();
+        
+        var sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+            
+        $('html, body').animate({scrollTop: dn}, 700);
+        });
+        
+
       };
     
       $("document").ready(function($){
