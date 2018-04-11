@@ -29,3 +29,5 @@ require('./common/blog-scroll');
 require('./common/blog-nav');
 
 require('./common/circles-active');
+
+require('./common/markers');

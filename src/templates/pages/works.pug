@@ -20,7 +20,7 @@ block content
                     h2.block-title-b Мои работы 
         section.section.works
             ul#slides.slider
-                li.slider-item.active
+                li.slider-item.active#slide1
                     .slider-item__img: img.slider-item__pic(src="./assets/images/work-1.png")
                     .slider-item__info
                         .slider-item__title
@@ -30,7 +30,7 @@ block content
                         button.slider-item__btn(type="button")
                             svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
                             span.slider-item__btn-text Посмотреть сайт
-                li.slider-item
+                li.slider-item#slide2
                     .slider-item__img: img.slider-item__pic(src="./assets/images/work-2.png")
                     .slider-item__info
                         .slider-item__title
@@ -39,7 +39,7 @@ block content
                         button.slider-item__btn(type="button")
                             svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
                             span.slider-item__btn-text Посмотреть сайт
-                li.slider-item
+                li.slider-item#slide3
                     .slider-item__img: img.slider-item__pic(src="./assets/images/work-3.png")
                     .slider-item__info
                         .slider-item__title
@@ -48,7 +48,7 @@ block content
                         button.slider-item__btn(type="button")
                             svg.slider-item__btn-icon: use(xlink:href="assets/images/sprite.svg#link")
                             span.slider-item__btn-text Посмотреть сайт
-                li.slider-item
+                li.slider-item#slide4
                     .slider-item__img: img.slider-item__pic(src="./assets/images/work-4.png")
                     .slider-item__info
                         .slider-item__title
@@ -60,13 +60,13 @@ block content
                 .markers
                     ul.markers__list
                         li.markers__item
-                            a.markers__link(href="#")
+                            a.markers__link.active#mar1(href="#slide1")
                         li.markers__item
-                            a.markers__link(href="#")
+                            a.markers__link#mar2(href="#slide2")
                         li.markers__item
-                            a.markers__link(href="#")
+                            a.markers__link#mar3(href="#slide3")
                         li.markers__item
-                            a.markers__link(href="#")
+                            a.markers__link#mar4(href="#slide4")
             .slider__buttons
                 button.controls.slider__controls-prev#previous(type="button")
                     svg.slider__controls-pic: use(xlink:href="assets/images/sprite.svg#arrow_down")
